@@ -1,0 +1,5195 @@
+# **KT0193F 37 in1 sensor kit for Arduino**
+
+## 1.Description
+
+This sensor kit contains 37 kinds of commonly used sensor modules in playing the microcontroller, such as active buzzer module, 5V relay module, temperature and humidity module and so on. It is compatible for various microcontrollers and Raspberry Pi.
+
+At the same time, we also provide some detailed projects for each sensor based on development board, including wiring method, test code, etc. It can help you have further understanding of those sensor modules and can apply them to interactive projects.
+
+Note that in the following projects, the main board and other wires are not included in this kit. You need to prepare them by yourself.
+
+## 2.Component List
+
+|    | NAME                                                                         | PHOTO                                                   |
+|----|------------------------------------------------------------------------------|---------------------------------------------------------|
+| 1  | Two-color LED Module                                                         | ![](media/d32a8791637aee164d59ea365bdf4491.png)         |
+| 2  | Colorful flashing LED Module                                                 | ![](media/a5521caedcbfe454a7499af9b43d86bb.png)         |
+| 3  | DIP RGB LED Module                                                           | ![](media/b051a0cd5034935f18be39d4d7471cfd.png)         |
+| 4  | SMD RGB LED Module                                                           | ![](media/6c1edb6f2f95cc4eccd8ba9d94d0c5d6.png)         |
+| 5  | Active Buzzer Module                                                         | ![](media/71c7aaec7dc61d094bb0154eabb81fb2.png)         |
+| 6  | Passive Buzzer Module                                                        | ![](media/43cd3e2b56bcfd934ac2894f73746c90.png)         |
+| 7  | Laser Transmitter Module                                                     | ![](media/05939913bc85f93286fb11c3d50b86b2.png)         |
+| 8  | 5V 1 Channel Relay Module                                                    | ![](media/795596843278d6a8a3bcc7c904224450.png)         |
+| 9  | Digital Push Button Module                                                   | ![](media/698f39bb2a905be9625a030bdcc7e3d4.png)         |
+| 10 | Digital Tilt Sensor                                                          | ![](media/9a36e14794aee1840a0cef177b8c75c9.png)         |
+| 11 | Knock Sensor Module                                                          | ![](media/9e272f4cabb2a553cfd8431e61eed666.png)         |
+| 12 | Hall Magnetic Sensor                                                         | ![](media/44b92773eab1d2e3c1e837206e3e5762.png)         |
+| 13 | Vibration Sensor Module                                                      | ![](media/613690fc5e00b5d9402d2ec9e87728ef.png)         |
+| 14 | Photo Interrupter Module                                                     | ![](media/186e65169ac053e24dd0537052171e3e.png)         |
+| 15 | Line Tracking Sensor                                                         | ![](media/9df4f7ca354fff7dbc44b0356ecf17c2.png)         |
+| 16 | Infrared Obstacle Avoidance Sensor                                           | ![](media/420baa4fa8f009334946d03c9d92b384.png)         |
+| 17 | Photoresistor module                                                         | ![](media/4950cab049b5dcd0cccb176c33dfc727.png)         |
+| 18 | Water Sensor                                                                 | ![](media/52690e2cd268c2fb6c2d420103b2430b.png)         |
+| 19 | Soil Humidity Sensor                                                         | ![](media/79d4b2650dcde909e72941e1584bb045.png)         |
+| 20 | Flame Sensor                                                                 | ![](media/6fdab391fdce377efd48806f776e0edd.png)         |
+| 21 | Linear Magnetic Hall Sensor                                                  | ![](media/f7d5459ae8c3948b33cd6fec07267821.png)         |
+| 22 | Metal Touch Sensor                                                           | ![](media/aaa7fb9b4dcca279e69bae60db01fdfc.png)         |
+| 23 | Reed Switch Module                                                           | ![](media/622477524fc6f8dcc506905b314f6f72.png)         |
+| 24 | Digita Temperature Sensor                                                    | ![](media/cc9b2b0a9650162ae7767e0473a9c960.png)         |
+| 25 | High-sensitivity sound sensor                                                | ![](media/be124d7652ac89d5c482a7bd70a2e6c0.png)         |
+| 26 | Analog Sound Sensor                                                          | ![](media/9ca753e8922b949c491013875e66eafe.png)         |
+| 27 | Digital IR Receiver Module                                                   | ![](media/d16c9e1947906ba7f6b481b2c019a32c.png)         |
+| 28 | Digital IR Transmitter Module                                                | ![](media/aa926076bd4d06d8489c4133b9c9a932.png)         |
+| 29 | 1602 LCD module                                                              | ![KS0061A](media/9e2fb5675143db8d51c3a62fba5cc30c.png)  |
+| 30 | DHT11 Sensor                                                                 | ![](media/eb354fbb823eb24ff3dc1103bfc5c84d.png)         |
+| 31 | PIR Motion Sensor                                                            | ![](media/625922127d8cc2e7b3fbcb66d7028c0f.png)         |
+| 32 | Joystick Module                                                              | ![](media/48d3291269371672e1cf70bcd4c6a167.png)         |
+| 33 | Rotary Encoder Module                                                        | ![](media/5a0e10778d16dcb52f4f5308ecf71398.png)         |
+| 34 | 4x4 membrane keypad                                                          | ![](media/acfc48af4a50c1226c9328d509c9c411.png)         |
+| 35 | HC-SR04 Blue Ultrasonic Sensor                                               | ![](media/cb98dcca890aa439b9f3a7f791d8b7cf.png)         |
+| 36 | MMA8452Q Acceleration Sensor                                                 | ![MD0474](media/1b6896057e9585cfd4ce3c0255ea2e27.png)   |
+| 37 | DS1307 Clock Module                                                          | ![](media/80a2d47d5dc44430bc2d259d49c4ee58.png)         |
+| 38 | potentiometer                                                                | ![22100007](media/3cefda097c8b367deb4bcbd06428ea2f.png) |
+|    | Zy-170 hole white (without package) with buckle for environmental protection | ![60320012](media/a9d66b0994d2705dddfb537d72681af2.png) |
+
+## 3. How to Add a Library?
+
+What are Libraries ?
+
+[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that makes it easy for you to connect to a sensor,display, module, etc.
+
+For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.
+
+The built-in libraries and some of these additional libraries are listed in the reference.
+
+How to Install a Library ?
+
+Here we will introduce the most simple way for you to add libraries .
+
+Step 1：After downloading well the Arduino IDE, you can right-click the icon of Arduino IDE.
+
+Find the option "Open file location" shown as below:
+
+![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
+
+Step 2: Enter it to find out libraries folder, this folder is the library file of Arduino.
+
+![](media/a67a5b5921be4dbc1b0ce92627111d15.png)
+
+Step 3： Next to find out the “libraries” folder of this kit(seen in the link: https://fs.keyestudio.com/KT0193F), you just need to replicate and paste it into the libraries folder of Arduino IDE.
+
+![](media/070a54e428caee6c2361a39d6be4b82f.png)
+
+![](media/da0e7c94005a4e3fdc9ca806116c5830.png)
+
+![](media/695eab52a0f8f1868e3f25629f7f055a.png)
+
+Then copy the above libraries in the libraries of Arduino, as shown below:
+
+![](media/b5704ba7ce9103ecd236964e13f67865.png)
+
+## 4.Projects
+
+### **Project 1: Two-color LED Module**
+
+![](media/b3f1461038d87065bcc02b43f548a87f.png)
+
+**Description**
+
+![](media/dd4315f7b29bba13a88e802812db9ce1.png)The Two Color LED module can emits red and yellow light. You can light it with blink's code ,can also adjust the intensity of each color using PWM.
+
+It Compatible with popular electronics platforms like Arduino, Raspberry Pi, ESP32 and more.
+
+This module consist of a common cathode 5mm red/yellow LED, a 0Ω resistor, and 3 male header pins. Since the operating voltage is between 2.0v and 2.5v, you’ll have to use limiting resistors to prevent burnout when connecting to the Arduino.
+
+**Specification**
+
+| Operating Voltage          | 2v \~ 2.5v    |
+|----------------------------|---------------|
+| Working Current            | 10mA          |
+| Diameter                   | 5mm           |
+| Package Type               | Diffusion     |
+| Color                      | Red + Yellow  |
+| Beam Angle                 | 150           |
+| Wavelength                 | 571nm + 644nm |
+| Luminosity Intensity (MCD) | 20-40; 40-80  |
+
+ **How Does It Work?**
+
+![IMG_256](media/6dd11985300f9c6740f17024dfdef4fe.jpeg)
+
+A dual-color light-emitting diode (LED) is capable of emitting two different colors of light, typically red and yellow, rather than only one color.
+
+It is housed in a 3mm or 5mm epoxy package. It has 3 leads; a common cathode or common anode is available. A dual-color LED features two LED terminals, or pins, arranged in the circuit in anti-parallel and connected by a cathode/anode.
+
+Positive voltage can be directed towards one of the LED terminals, causing that terminal to emit light of the corresponding color; when the direction of the voltage is reversed, the light of the other color is emitted.
+
+In a dual-color LED, only one of the pins can receive voltage at a time. As a result, this type of LED frequently functions as indicator lights for a variety of devices, including televisions, digital cameras, and remote controls.
+
+ Pinout
+
+![](media/fdc7c3b09e1c67f1337a2a5c2d1f7989.png)
+
+YELLOW is the yellow LED pin which we connect to the Arduino.
+
+RED is the red LED pin which we connect to the Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the yellow pin (Y) on the board to Pin 10 on the Arduino, connect the red pin (R) to pin 11. Lastly, connect the ground pin (G) to GND.
+
+![](media/a88f796b3b250f6f4de33ec1fc84919a.png)
+
+![](media/f68b843b0256db5289c42b0448117981.png)![](media/aa09b35409be5a2e262d5a964b7c3722.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 1
+
+Two Color LED
+
+By keyes
+
+\*/
+
+int redled = 11;//pin for red signal
+
+int yellowled = 10;//pin for yellow signal
+
+void setup()
+
+{
+
+pinMode(redled, OUTPUT); //Set Pin11 as output
+
+pinMode(yellowled, OUTPUT); //Set Pin10 as output
+
+}
+
+void loop()
+
+{
+
+digitalWrite(redled, HIGH); //Turn on the red led
+
+digitalWrite(yellowled, LOW); //Turn off the yellow led
+
+delay(1000);// delay for 1000ms
+
+digitalWrite(redled, LOW); //Turn off the red led
+
+digitalWrite(yellowled, HIGH); //Turn on the yellow led
+
+delay(1000);//delay for 1000ms
+
+}
+
+**Example Result**
+
+Upload the code to the development board, you can see the red LED and yellow LED on the LED flash alternately for 1 second.
+
+**UNO:**
+
+![IMG_256](media/0793f3712339b21dfacc99ad2b7be602.jpeg) ![IMG_256](media/cde4267d6c049dfddb3b66a2a52602f0.jpeg)
+
+**MEGA 2560:**
+
+![1F8C78B229A6ADB2BE247779023970EA](media/22d6cc0be40d707f767f368ff70cd06d.jpeg) ![D6A89DC33A2F11EC671CB007CCE035F0](media/db5af794d8ff1cc9624d2a6e186a4f96.jpeg)
+
+### **Project 2: 7 Color flashing LED Module**
+
+![](media/810f0a84df199b94064380e44360c395.png)
+
+**Description**
+
+![](media/b221fc43586ba8856be82930fde06a0b.png)The LED 7 Color Flashing Module incorporates a 5mm tri-color (RGB) LED with red, green and blue LEDs and the logic to cycle through various colors at different speeds all housed in the same package.
+
+**Specification**
+
+| Operating Voltage | 3.5 \~ 5v        |
+|-------------------|------------------|
+| Working Current   | 10mA             |
+| Diameter          | 5mm              |
+| Color             | 7 Color Flashing |
+
+ **How Does It Work?**
+
+This module provides an eye catching flashing display without a lot of work.
+
+The LED contains logic built-in to automatically flash the LED at different rates while cycling through the 7 possible colors of red, green, blue, yellow, purple, cyan and white by mixing the different LED colors. The LED body is water clear.
+
+![](media/25d81f8843b20cd166e21be5e05991b1.png)
+
+Because it has built-in driver, it can be simply wired between 5V and ground to operate (will also work at 3.3V) or it can be controlled by the output pin of an MCU. A current limiting resistor of 220 ohms or greater should be used to protect the MCU and LED module from excessive current.
+
+ Pinout
+
+![](media/10068922bbd518a79b48af77ecbfd46b.png)
+
+SIN is the 7 color LED pin which we connect to the Arduino.
+
+NC means not connecting to anything.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the SIN pin (S) on the board to Pin 4 on the Arduino, connect the ground pin (-) to GND.The PIN in the middle is not connected.
+
+![](media/1239f1de9cd005384bcc6ffc75538119.png)
+
+![](media/28bd47b8df952f5305dbfb6d807d6af5.png)
+
+![](media/3818a7cbbc76ace2abbd41640ee3ff2c.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 2
+
+7 Color flashing LED
+
+By keyes
+
+\*/
+
+int LEDPin = 4; // select a digital pin for the LED
+
+// Initialization
+
+void setup()
+
+{
+
+pinMode (LEDPin, OUTPUT);
+
+Serial.begin (9600); // Set output window comm rate
+
+}
+
+void loop()
+
+{
+
+// Turn the LED on for 10 seconds and then off for 2
+
+Serial.println ("LED Turned ON");
+
+digitalWrite (LEDPin, HIGH);
+
+delay(10000);
+
+Serial.println ("LED Turned OFF");
+
+digitalWrite (LEDPin, LOW);
+
+delay(2000);
+
+}
+
+**Example Result**
+
+Upload the code to the development board, you can see the 7 color flashing led turn on for 10 seconds and then turn off for 2 seconds.
+
+**UNO:**
+
+![IMG_256](media/e448a5f0a001604d918e3b425eaed340.jpeg)
+
+![IMG_256](media/86895e6d57d1b14c96e61e395ab2829c.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/8de1fc092220910c00d84073a72fa968.jpeg) ![IMG_256](media/b7bfab604c4c07e1c92781a75827a892.jpeg)
+
+### **Project 3: DIP RGB LED Module**
+
+![](media/65b4e00d0676e2d0fc93efa7cc53637d.png)
+
+**Description**
+
+![](media/ed7923ded5006c6413a9b04cc91ed31f.png)The KY-016 Full Color RGB LED emits a wide range of different colors by mixing red, green and blue light. Compatible with many popular microcontrollers like Arduino, Raspberry Pi and ESP32.
+
+**Specification**
+
+This module consists of a 5mm RGB LED, 3 150Ω limiting resistors to prevent burnout and 4 male header pins. Adjusting the PWM signal on each color pin will result on different colors.
+
+| Operating Voltage | 3.3-5V                        |
+|-------------------|-------------------------------|
+| Working Current   | 10mA                          |
+| Color             | Red + green+blue              |
+| LED Drive Mode    | Common cathode drive          |
+| LED Diameter      | 5mm                           |
+| Board Size        | 15mm x 19mm [0.59in x 0.75in] |
+
+ **How Does It Work?**
+
+An RGB LED is a combination of 3 LEDs in just one package:
+
+-   1x **R**ed LED
+-   1x **G**reen LED
+-   1x **B**lue LED
+
+You can produce almost any color by combining those three colors. An RGB LED is shown in the following figure:
+
+![IMG_256](media/46dd8d469848520fa5479593a47c2c80.png)
+
+**How to create different colors?**
+
+With an RGB LED you can, of course, produce red, green, and blue light, and by configuring the intensity of each LED, you can produce other colors as well.
+
+For example, to produce purely blue light, you’d set the blue LED to the highest intensity and the green and red LEDs to the lowest intensity. For a white light, you’d set all three LEDs to the highest intensity.
+
+**Mixing colors**
+
+To produce other colors, you can combine the three colors in different intensities. To adjust the intensity of each LED you can use a PWM signal.
+
+Because the LEDs are very close to each other, our eyes see the result of the combination of colors, rather than the three colors individually.
+
+To have an idea on how to combine the colors, take a look at the following chart. This is the simplest color mixing chart, but gives you an idea how it works and how to produce different colors.
+
+![IMG_258](media/cd5a04fd23a99ea63dfeca17b82a5cc6.png)
+
+**Common Anode and Common Cathode RGB LEDs**
+
+There are two kinds of RGB LEDs: *common anode* LED and *common cathode* LED. The figure below illustrates a common anode and a common cathode LED.
+
+![IMG_259](media/d22c98c442111ecc653c0e97280458ed.png)
+
+In a common cathode RGB LED, all three LEDs share a negative connection (cathode). In a common anode RGB LED, the three LEDs share a positive connection (anode).This results in an LED that has 4 pins, one for each LED, and one common cathode or one common anode.
+
+ Pinout
+
+![](media/a861e76009057d6461142b869505a3ea.png)
+
+GREEN is the green LED pin which we connect to the Arduino.
+
+RED is the red LED pin which we connect to the Arduino.
+
+BLUE is the blue LED pin which we connect to the Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module red pin (R) to pin 11 on the Arduino. Blue (B) to pin 10, green (G) to pin 9 and ground (-) to GND.
+
+![](media/21139beef0007d160b118b2908043d04.png)
+
+![](media/6d27dfdb8ccd414cf47f215dd49162f6.png)![](media/f69798181dc0087244f94fc01ecd73e5.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 3
+
+DIP RGB LED
+
+By keyes
+
+\*/
+
+int redpin = 11; // select the pin for the red LED
+
+int bluepin =10; // select the pin for the blue LED
+
+int greenpin =9; // select the pin for the green LED
+
+int val;
+
+void setup() {
+
+pinMode(redpin, OUTPUT);
+
+pinMode(bluepin, OUTPUT);
+
+pinMode(greenpin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop() {
+
+for(val = 255; val \> 0; val--)
+
+{
+
+analogWrite(11, val);
+
+analogWrite(10, 255 - val);
+
+analogWrite(9, 128 - val);
+
+Serial.println(val, DEC);
+
+delay(5);
+
+}
+
+for(val = 0; val \< 255; val++)
+
+{
+
+analogWrite(11, val);
+
+analogWrite(10, 255 - val);
+
+analogWrite(9, 128 - val);
+
+Serial.println(val, DEC);
+
+delay(5);
+
+}
+
+}
+
+**Example Result**
+
+Connect the cable, and after uploading the code, you can see that the LED is changing color
+
+**UNO:**![IMG_256](media/4ed143c23b13e35464f6437ad47d6a4e.jpeg)
+
+![IMG_256](media/61746c198d15fc8e54c90d9f30da19ca.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/41ccb60723e5e60fd51cb2eae18fce51.jpeg) ![IMG_256](media/ef9c550837c18e8d43a0dc8991619fff.jpeg)
+
+### **Project 4: SMD RGB LED Module**
+
+![](media/e292bc519a648de5d1372b7ea9b683e7.png)
+
+**Description**
+
+![](media/92b275d57646ec52b34d0d99ff3973d7.png)This is a full-color LED module, which contains 3 basic colors－red, green and blue. They can be seen as separate LED lights.
+
+After programming, you can turn them on and off by sequence or can also use PWM analog output to mix three colors to generate different colors.
+
+**Specification**
+
+| Operating Voltage     | 5V max Red 1.8V \~2.4V Green 2.8V \~ 3.6V Blue 2.8V \~ 3.6V |
+|-----------------------|-------------------------------------------------------------|
+| Forward Current       | 20mA \~ 30mA                                                |
+| Operating Temperature | -25°C to 85°C [-13°F \~ 185°F]                              |
+| Board Diemsions       | 18.5mm x 15mm [0.728in x 0.591in]                           |
+
+ 
+
+ **How Does It Work?**
+
+SMD LED (acronym for Surface-Mount-Device, Light-Emitting-Diode) is a type of LED characterized by having a 3 in 1 encapsulation, meaning that it integrates all 3 colors (Red, Green, Blue) in a single system.
+
+![IMG_256](media/6035fa175ff13175441d6e9d917835f1.png)![IMG_256](media/3283bb2942b7192c09b3b60eed9b2f09.png)
+
+This type of module consists of four pins: the Ground pin, the Red, Green and blue pins.
+
+The three pins are digital signals that we connect to the digital ports of any different microcontroller boards which in this project is the Arduino Uno.
+
+Once connected and codes have been made, the LED’s inside the chip will light up.
+
+![IMG_256](media/8b4df51d3b534dc95986dc10754ed541.jpeg)
+
+Resistors will be placed on the three signal pins to regulate the flow of current to prevent burning the actual module.
+
+ Pinout
+
+![](media/7eea528e8752005f62e8d372f0ce2071.png)
+
+GREEN is the green LED pin which we connect to the Arduino.
+
+RED is the red LED pin which we connect to the Arduino.
+
+BLUE is the blue LED pin which we connect to the Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the red pin (R) to Pin 10, the green pin (G) to pin 11, the blue pin (B) to pin 9 and finally the ground pin (-) to GND.
+
+You must use resistors between the board and the Arduino to prevent LED burnout.
+
+![](media/5e7786a5b5cba41248c4c17e0e34f801.png)
+
+![](media/b09eb016bc2b81e7655b01f3da13a53d.png)
+
+![](media/6654c912f51178ff09ce601e58568c11.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 4
+
+SMD RGB LED
+
+By keyes
+
+\*/
+
+int bluepin =9; // select the pin for the blue LED
+
+int redpin = 10; //select the pin for the red LED
+
+int greenpin =11;// select the pin for the green LED
+
+int val;
+
+void setup() {
+
+pinMode(redpin, OUTPUT);
+
+pinMode(bluepin, OUTPUT);
+
+pinMode(greenpin, OUTPUT);
+
+}
+
+void loop()
+
+{for(val=255; val\>0; val--)
+
+{analogWrite(11, val);
+
+analogWrite(10, 255-val);
+
+analogWrite(9, 128-val);
+
+delay(1);
+
+}
+
+for(val=0; val\<255; val++)
+
+{analogWrite(11, val);
+
+analogWrite(10, 255-val);
+
+analogWrite(9, 128-val);
+
+delay(1);
+
+}
+
+}
+
+**Example Result**
+
+Done wiring and powered up, upload well the code, you will see the RGB LED module emit shiny colors.
+
+**UNO:**
+
+**![9911DDDACEEB03FC7874C9B6443A763F](media/81917106b520cbc15794d73ab43ae90b.jpeg)**
+
+**![4596422E5BD02289ED899D48F2778E1E](media/33a23896fe175f562f4aff070ae10f52.jpeg)**
+
+**MEGA 2560:**
+
+**![282A02CFAB30988E1D448448074C7ACA](media/e512e8c598611d8fd065629bde27770c.jpeg) ![62088AB388337E1B855C749DD8C1A911](media/4734fcc558ac2fa8dba0bfc8d37c110b.jpeg)**
+
+**  
+**
+
+### **Project 5: Active Buzzer Module**
+
+![IMG_256](media/ea727c6d18d08e6ac756f76b11698724.png)
+
+**Description**
+
+![](media/238b0ea29901d6cf1e09b99f5297b5d3.png)The Active buzzer is the simplest sound making module. You can use high/low level to drive it.
+
+This module is widely used on our daily appliances like PC, refrigerator, phones, etc.
+
+In addition, you can create many interesting interactive projects with this small but useful module. Just try it!! You will find the electronic sound it creates so fascinating.
+
+**Specification**
+
+| Operating Voltage    | 3.5V \~ 5.5V                      |
+|----------------------|-----------------------------------|
+| Maximum Current      | 30mA / 5VDC                       |
+| Resonance Frequency  | 2500Hz ± 300Hz                    |
+| Minimum Sound Output | 85Db @ 10cm                       |
+| Working Temperature  | -20°C \~ 70°C [-4°F \~ 158°F]     |
+| Storage Temperature  | -30°C \~ 105°C [-22°F \~ 221°F]   |
+| Board Dimensions     | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ **How Does It Work?**
+
+![](media/bbc52b600c70618e83a69bfee9fdbe16.png)The Active buzzer also known as indicator buzzer uses a DC power and will produce frequency right when it is powered with its built in PCB. However it has only one frequency and can be pulsed. It generates a sound of aproximately 2.5kHz when the signal is high.
+
+ Pinout
+
+![](media/ef8376d23e540d86886923ec5c5425c2.png)
+
+SIN is the Active buzzer pin which we connect to the Arduino.
+
+NC means not connecting to anything.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect signal (S) to pin 8 on the Arduino and Ground (-) to GND. The middle pin is not used.
+
+| **KY-012** | **Arduino** |
+|------------|-------------|
+| S          | Pin 8       |
+| middle     |             |
+| –          | GND         |
+
+![](media/8a4716d8b4dbda6855d22ebdafd82bd2.png)
+
+![](media/93bfc116728baf52564dc00fffeece67.png)
+
+![](media/b1be6dbf42c7cb3729a56a23ac5d6bc7.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 5
+
+Active Buzzer
+
+By keyes DIY
+
+\*/
+
+int buzzerPin = 8;
+
+void setup ()
+
+{
+
+pinMode (buzzerPin, OUTPUT);
+
+}
+
+void loop ()
+
+{
+
+digitalWrite (buzzerPin, HIGH);
+
+delay (500);
+
+digitalWrite (buzzerPin, LOW);
+
+delay (500);
+
+}
+
+**Example Result**
+
+Done uploading the code to board, the buzzer will make a sound.
+
+**UNO:**
+
+![IMG_256](media/063ca6e2b07fe414ed3a460df955fff1.jpeg)
+
+**MEGA 2560:**
+
+**![8F77563C01337DCA4D0F34F50D2E9221](media/aa28e5221ee6e7ab669a91edabac60a0.jpeg)**
+
+**  
+**
+
+### **Project 6: Passive Buzzer Module**
+
+![](media/ca265646e1debf3cbdb77757a5f954f9.png)
+
+**Description**
+
+![](media/ba80a891798317af571269ebe07e064f.png)The buzzer we introduced here is a passive buzzer. It cannot be actuated by itself, but by external pulse frequencies. Different frequencies produce different sounds. You can use Arduino to code the melody of a song, quite fun and simple.
+
+**Specification**
+
+| Operating Voltage     | 1.5V \~ 15V DC                    |
+|-----------------------|-----------------------------------|
+| Tone Generation Range | 1.5kHz \~ 2.5kHz                  |
+| Board Dimensions      | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ 
+
+ **How Does It Work?**
+
+passive buzzers are types of magnetic buzzers. Inside the buzzer, there is a coil of wire that’s connected to the buzzer’s pins.
+
+There is also a round magnet that surrounds the wire coil. A thin metal film with a metal weight attached to the top sits above the round magnet and wire coil.
+
+When pulses of current are applied to the wire coil, magnetic inductance causes the metal weight and metal film to vibrate up and down. The vibration of the metal film produces sound waves:
+
+![IMG_256](media/bdad47352afd45130d53e693cd185e27.png)
+
+ Pinout
+
+![](media/d22bf7a96a1434cc57c5f5e5473a8fe0.png)
+
+SIN is the Passive buzzer pin which we connect to the Arduino.
+
+NC means not connecting to anything.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module signal (S) to pin 8 on the Arduino and ground (-) to GND.
+
+The middle pin is not used.
+
+![](media/99e4ce6554fc180ab427d66288fe4e2e.png)
+
+![](media/907dbdd836b409debb0c66521620918e.png)![](media/9d5086303223153f174b16ca08e867e2.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 6
+
+Passive Buzzer
+
+By keyes
+
+\*/
+
+int buzzer = 8; // set the buzzer control digital IO pin
+
+void setup() {
+
+pinMode(buzzer, OUTPUT); // set pin 8 as output
+
+}
+
+void loop() {
+
+for (int i = 0; i \< 100; i++) { // make a sound
+
+digitalWrite(buzzer, HIGH); // send high signal to buzzer
+
+delay(1); // delay 1ms
+
+digitalWrite(buzzer, LOW); // send low signal to buzzer
+
+delay(1);
+
+}
+
+delay(50);
+
+for (int j = 0; j \< 100; j++) { //make another sound
+
+digitalWrite(buzzer, HIGH);
+
+delay(2); // delay 2ms
+
+digitalWrite(buzzer, LOW);
+
+delay(2);
+
+}
+
+delay(500);
+
+}
+
+**Example Result**
+
+Done uploading the code to board, the buzzer will make a sound.
+
+**UNO**
+
+![IMG_256](media/8b5c6fb9475e6313f3e3f517a797a312.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/ba4a3f9808c9a6e5b8372bd12de72d01.jpeg)
+
+### **Project 7: Laser Transmitter Module**
+
+![](media/66efc386eff3e79a607b61b6805952ac.png)
+
+**Description**
+
+![](media/87f4466329e58399e7f5dedd95deca14.png)The KY-008 Laser Transmitter module can be used as a laser pointer. It emits a dot shaped, red laser beam.
+
+It consists of a 650nm red laser diode head, a resistor and 3 male header pins. Handle with caution, do not point the laser beam directly to the eyes.
+
+Laser Transmitter module compatible with Arduino, Raspberry PI, ESP32 and other popular microcontrollers.
+
+**Specification**
+
+| Operating Voltage   | 5V                                |
+|---------------------|-----------------------------------|
+| Output Power        | 5mW                               |
+| Wavelenght          | 650nm                             |
+| Operating Current   | \< 40mA                           |
+| Working Temperature | -10°C \~ 40°C [14°F to 104°F]     |
+| Board Dimensions    | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ **How Does It Work?**
+
+The working of a laser diode takes place in three main steps:
+
+1.Energy Absorption
+
+The laser diode consists of a p-n junction where holes and electrons exist. (Here, a hole means the absence of an electron).
+
+When a certain voltage is applied at the p-n junction, the electrons absorb energy and they transition to a higher energy level. Holes are formed at the original position of the excited electron.
+
+The electrons stay in this excited state without recombining with holes for a very small duration of time, termed as “recombination time” or “upper-state lifetime”. The recombination time is about a nanosecond for most laser diodes.
+
+![IMG_256](media/bf95571c46b7b64df9b5a8bc4ae93cdf.jpeg)
+
+2.Spontaneous Emission
+
+After the upper-state lifetime of excited electrons, they recombine with holes.
+
+As the electrons fall from higher energy level to a lower energy level, the difference in energy is converted into photons or electromagnetic radiation.
+
+This same process is used to produce light in LEDs. The energy of the emitted photon is given by the difference between the two energy levels.
+
+![IMG_257](media/dc081241a01ce08e4a197e0244697080.jpeg)
+
+3.Stimulated Emission
+
+We need more coherent photons from the laser diode than the ones emitted through the process of spontaneous emission.
+
+A partially reflecting mirror is used on either side of the diode so that the photons released from spontaneous emission are trapped in the p-n junction until their concentration reaches a threshold value.
+
+These trapped photons stimulate the excited electrons to recombine with holes even before their recombination time.
+
+This results in the release of more photons that are in exact phase with the initial photons and so the output gets amplified. Once the photon concentration goes above a threshold, they escape from the partially reflecting mirrors, resulting in a bright monochromatic coherent light.
+
+![IMG_258](media/96da44795bfec17313a2b0084bfd0bf0.jpeg)
+
+ Pinout
+
+![](media/12a5c5fb83439f0221beb4e72e75a420.png)
+
+SIN is the laser signal pin which we connect to the Arduino.
+
+NC means not connecting to anything.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module signal pin (S) to pin 8 on the Arduino and ground (-) to GND.The middle pin on the module is not used.
+
+![](media/f0e3fa8fc087d7ffcedb8260f7e158df.png)
+
+![](media/962f7a88049a3e646c2f75bc25aa7ec7.png)![](media/761179816505c65934a0cc2487e70c4e.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 7
+
+Laser
+
+By keyes
+
+\*/
+
+int laserPin = 8;
+
+void setup() {
+
+pinMode(laserPin, OUTPUT); // Define the digital output interface pin 8
+
+}
+
+void loop() {
+
+digitalWrite(laserPin, HIGH); // Turn on the laser head
+
+delay(1000); // wait for one second
+
+digitalWrite(laserPin, LOW); // Turn off the laser head
+
+delay(1000);
+
+}
+
+**Example Result**
+
+Connect the cable, and after uploading the code, you can see the flashing of the laser module on and off for one second
+
+**UNO:**
+
+![IMG_256](media/9e5efc3307c6d3c7fc6ce4817c9718ac.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/899d86bba0cc3792cab491b714e4827d.jpeg)
+
+### **Project 8：5V 1 Channel Relay Module**
+
+![](media/176c9edc3ff35f4b99e4c62b7e0f6946.png)
+
+**Description**
+
+![](media/fb4656edaa1d221d06121f420e200225.png)This single relay module can be used in interactive projects. This module uses SONGLE 5v high-quality relay. It can also be used to control lighting, electrical and other equipment.
+
+The modular design makes it easy to use with Arduino board. It can be controlled through digital IO port, such as solenoid valves, lamps, motors and other high current or high voltage devices.
+
+**Specification**
+
+| TTL Control Signal | 5VDC to 12VDC (some boards may work with 3.3) |
+|--------------------|-----------------------------------------------|
+| Maximum AC         | 10A 250VAC                                    |
+| Maximum DC         | 10A 30VDC                                     |
+| Contact Type       | NC and NO                                     |
+| Board Dimensions   | 27mm x 34mm [1.063in x 1.338in]               |
+
+ **How Does It Work?**
+
+A relay is an **electromagnetic switch** operated by a relatively small current that can control much larger current.
+
+Here’s a simple animation illustrating how the relay uses one circuit to switch on another circuit.
+
+![IMG_256](media/4f07201fefa4363dc33693ef045bdbff.GIF)
+
+Initially the first circuit is switched off and no current flows through it until something (either a sensor or switch closing) turns it on. The second circuit is also switched off.
+
+When a small current flows through the first circuit, it activates the electromagnet, which generates a magnetic field all around it.
+
+The energized electromagnet attracts a contact in the second circuit toward it, closing the switch and allowing a much bigger current to flow through the second circuit.
+
+When the current stops flowing, the contact goes back up to its original position, switching the second circuit off again.
+
+ Relay Basics
+
+Typically the relay has 5 pins, three of them are high voltage terminals (NC, COM, and NO) that connect to the device you want to control.
+
+![IMG_257](media/858de74b9f862df1c0bc93022bc3a7bb.png)
+
+The mains electricity enters the relay at the common (COM) terminal. While use of NC & NO terminals depends upon whether you want to turn the device ON or OFF.
+
+Between the remaining two pins (coil1 and coil2), there is a coil that acts like an electromagnet.
+
+![IMG_258](media/f52b412166d95ed2b5916f1b553504c3.GIF)
+
+When current flows through the coil, the electromagnet becomes charged and moves the internal contacts of the switch. At that time the normally open (NO) terminal connects to the common (COM), and the normally closed (NC) terminal becomes disconnected.
+
+When current stops flowing through the coil, the internal contact returns to its initial state i.e. the normally closed (NC) terminal connects to the common (COM), and the normally open (NO) terminal reopens.
+
+This is known as a single pole, double throw switch (**SPDT**).
+
+ Pinout
+
+![](media/daed0e89dd4f1c8fe76ba65a037cb840.png)
+
+SIN is the relay signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+For the DC part of the circuit connect S (signal) to pin 10 on the Arduino, also connect the Power line (+) and ground (-) to +5 and GND respectively.
+
+On the AC side connect your feed to Common (middle contact) and use NC or NO according to your needs.
+
+NO (Normally Open) will get power when (S) is high, NC (Normally Closed) gets disconnected when (S) is high.
+
+Always be very careful when experimenting with AC, electrical shock can result in serious injures.
+
+![](media/ac49f4141b888a79d0e86b98d9bc2725.png)
+
+![](media/ecd2f07483e21523414ab67d4e972b12.png)![](media/e59f9303bb2f7f7a473c11143399d788.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 8
+
+Relay
+
+By keyes
+
+\*/
+
+int relay = 10; //Pin 10
+
+void setup()
+
+{
+
+pinMode(relay,OUTPUT); // Define the port attribute as output
+
+}
+
+void loop()
+
+{
+
+digitalWrite(relay,HIGH); // turn the relay ON
+
+// [NO] is connected to feed
+
+// [NC] is not connected to feed
+
+delay(1000);
+
+digitalWrite(relay,LOW); // turn the relay OFF
+
+// [NO] is not connected to feed
+
+// [NC] is connected to feed
+
+delay(1000);
+
+}
+
+**Example Result**
+
+This relay module is active at HIGH level.
+
+Wire it up well, powered up, then upload the above code to the board, you will see the relay is turned on（ON connected, NC disconnected）for two seconds, then turned off for two seconds（NC closed,ON disconnected）, repeatedly and circularly.
+
+When the relay is turned on, external LED is on. If relay is turned off, external LED is off.
+
+**UNO:**![IMG_256](media/8fa21e8f340070288f174c991fc0789f.jpeg)
+
+![IMG_256](media/f5dac59276c2ed4948c203557b39a03d.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/c81eafc908a91673b3755140b5ea5d0d.jpeg) ![IMG_256](media/28d92842594972ac66b7131cfda90b72.jpeg)
+
+### **Project 9: Digital Push Button Module**
+
+![](media/60717c19221f9886d111cbcab69e9383.png)
+
+**Description**
+
+![](media/bf4da83d67f0d832624687b0ad72d852.png)This is a basic button module. You can simply plug it into an IO shield to have your first try of Arduino. The KY-004 Key Switch Module is a push button that will close the circuit when pressed, sending a high signal.
+
+This module is compatible with Arduino, Raspberry Pi, ESP32 and other platforms.
+
+**Specification**
+
+| Rating                  | 50mA 12VC                         |
+|-------------------------|-----------------------------------|
+| Environment temperature | -25°C to 105°C [ -13°F to 221°F]  |
+| Durability              | 100,000 cycles                    |
+| Operating Force         | 180/230(±20gf)                    |
+| Board Dimensions        | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ **How Does It Work?**
+
+There are 4 legs in this type of button in the KY 004 Arduino module. The 2 legs on the top are connected together and the same goes with the 2 legs on the bottom.
+
+Current will flow when the top section and the bottom section connect, and this happens when the button is pressed.
+
+Once released, connection is lost between the two sections and the flow of current will stop.
+
+Once we interface the module with an Arduino, the Arduino will be able to know if the button is being pressed as it will detect the flow of current from the resistor that is connected to the legs of the button.
+
+![IMG_256](media/8570af97aa020d96073f2cf8458d1ce5.jpeg)
+
+![IMG_257](media/fbf65da8d2ed35ac4abaf22bb3955d6f.jpeg)
+
+ Pinout
+
+![](media/ccbed842b4baf2c14b306d0402519eb2.png)
+
+SIN is the button signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module signal pin (S) to pin 3 on the Arduino.Then connect the board power pin (middle) and ground (-) to +5V and GND on the Arduino respectively.
+
+![](media/28173b5273cac785f96ca763c348eee4.png)![](media/bb86b6a1fea51116c3ddb36ae133316d.png)![](media/eca235aa08e9294b66b23a1d4f3ab40b.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 9
+
+Button
+
+By keyes
+
+\*/
+
+int led = 13; //Define the LED pin
+
+int buttonpin = 3; //Define the push button pin
+
+int val; //Define a numeric variable
+
+void setup()
+
+{
+
+pinMode(led,OUTPUT);
+
+pinMode(buttonpin,INPUT);
+
+}
+
+void loop()
+
+{
+
+val = digitalRead(buttonpin); // check the state of the button
+
+if(val==HIGH) // if button is pressed, turn LED on
+
+{
+
+digitalWrite(led,HIGH);
+
+}
+
+else
+
+{
+
+digitalWrite(led,LOW);
+
+}
+
+}
+
+**Example Result**
+
+Wire it up well as the figure shown below, and then upload the code to the board.
+
+When the number button is pressed, the D13 led goes out, and when the number button is released, the D13 led goes on
+
+**UNO:**
+
+![IMG_256](media/f1cc3e1a742cb3b55414cfe30ad6371b.jpeg)
+
+![IMG_256](media/f30df227090f6811e70607a7b3d35a64.jpeg)
+
+**MEGA2560:**![IMG_256](media/52232fa5f7221e84b96665584cea2c14.jpeg)
+
+![IMG_256](media/903b3f2a6bde18b465f44561ee5848f4.jpeg)
+
+### **Project 10: Digital Tilt Sensor**
+
+![](media/7d2b294ab78a9ce767f732f325c1b08c.png)
+
+**Description**
+
+The KY-020 Tilt Switch Sensor module is a switch that reacts to movement. It closes the circuit when it’s tilted to the side as long as it is moved with enough force and degree of inclination to activate the ball switch inside.It Compatible with Arduino, Raspberry Pi, ESP32 and other microcontrollers.
+
+**Specification**
+
+| Operating Voltage | 3.3V \~ 5V |
+|-------------------|------------|
+| Output Type       | Digital    |
+
+ **How Does It Work?**
+
+A ball tilt sensor is typically made up of a metal tube with a little metal ball that rolls around in it. One end of the cavity has two conductive elements (poles). The sensor is designed in such a way that a sufficient level of tilt allows the ball to roll, making or breaking an electrical connection.
+
+![IMG_256](media/f8e2c8b52f36649d27706463af59c9ca.png)
+
+When the sensor is upright the ball touches the poles and makes an electrical connection. And when the sensor is tilted the ball rolls off the poles and the connection is broken.
+
+ Pinout
+
+![](media/a7760ab1c212ad922e12fcd7fb316467.png)
+
+SIN is the tilt switch signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module’s Power line (middle) and ground (-) to +5 and GND respectively.Connect signal (S) to pin 2 on the Arduino.
+
+![](media/133c64038ce6a6d64d12c345ae7b3d34.png)
+
+![](media/c1adbdecd00a2c1ddd90c6c339077699.png)
+
+![](media/f8dfa96f811a2d0013d61577a9419337.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 10
+
+Tilt
+
+By keyes
+
+\*/
+
+int tiltPin = 2; // pin number for tilt switch signal
+
+int ledPin = 13; // pin number of LED
+
+int tiltState = 0; // variable for reading the tilt switch status
+
+void setup() {
+
+pinMode(ledPin, OUTPUT); // set the LED pin as output
+
+pinMode(tiltPin, INPUT); // set the tilt switch pin as input
+
+}
+
+void loop(){
+
+// get the tilt switch state
+
+tiltState = digitalRead(tiltPin);
+
+// check if tilt switch is tilted.
+
+if (tiltState == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+}
+
+else {
+
+digitalWrite(ledPin, LOW);
+
+}
+
+}
+
+**Example Result**
+
+Done wiring and powered up, then upload well the code to PLUS board.
+
+Then tilt the sensor, you will see the led on the sensor is turned on. Shown as below.
+
+**UNO:**
+
+![IMG_256](media/c5f6f53453f1db01ca3bfa485c663f63.jpeg) ![IMG_256](media/2e0a2e7780d90f9502bfb44fde4cf517.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/5b1bf201d940a513b44441986c3f7795.jpeg) ![IMG_256](media/6de1008dec32c632f00c69562af4b4ed.jpeg)
+
+### **Project 11: Knock Sensor Module**
+
+![](media/8aba9c1d1c66f734f88edc2deea3ca44.png)
+
+**Description**
+
+The KY-031 Knock Sensor module is a vibration sensor that sends a signal when a knock/tap is detected. You can combine it with Arduino to make some interesting experiments, e.g. electronic drum.
+
+It Compatible with Arduino, ESP8266, ESP32, Teensy, Raspberry Pi, and other popular platforms.
+
+**Specification**
+
+| Operating Voltage | 3.3V \~ 5V |
+|-------------------|------------|
+| Output Type       | Digital    |
+
+ **How Does It Work?**
+
+Inside the actual sensor, there is a thin copper wire that is coiled up in a spring form and it surrounds another copper wire that acts as a center post. Both the spring and the center post will be the two connection terminals of the sensor which functions like a simple switch.
+
+![IMG_256](media/3c4df449c5090d2c973eb67449ad0fba.jpeg)
+
+Normally, the outer spring is slightly separated from the center post. When the outer spring and the center post touch by means of sufficient amount of vibration, this shorts both of the terminals.
+
+![IMG_257](media/dc92af1d6634c6c3291b64273f3c93c8.jpeg)
+
+Although the contact of the spring and the center post is momentary, the Arduino is superbly efficient detecting this connection by implementing the proper programming.
+
+ Pinout
+
+![](media/99ffee2e266bb33193d7ff9f81eba5a7.png)
+
+SIN is the knock sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module’s Power line (middle) and the ground (-) to +5 and GND respectively.Connect signal (S) to pin 3 on the Arduino.
+
+![](media/ecdedd12a2b8067aee2d543402ea5477.png)
+
+![](media/4de08a1cd80494140e822d41b458c3c9.png)![](media/c3e504a20797529fc627b1c4a2a54b31.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 11
+
+Knock
+
+By keyes
+
+\*/
+
+int Led = 13; // LED on Arduino board
+
+int Shock = 3; // sensor signal
+
+int val; // numeric variable to store sensor status
+
+void setup()
+
+{
+
+pinMode(Led, OUTPUT); // define LED as output interface
+
+pinMode(Shock, INPUT); // define input for sensor signal
+
+}
+
+void loop()
+
+{
+
+val = digitalRead(Shock); // read and assign the value of digital interface 3 to val
+
+if(val == HIGH) // when sensor detects a signal, the LED flashes
+
+{
+
+digitalWrite(Led, LOW);
+
+}
+
+else
+
+{
+
+digitalWrite(Led, HIGH);
+
+delay(3000);
+
+}
+
+}
+
+**Example Result**
+
+After connecting the cable and uploading the code, knocking on the module will make the D13 LED light on for 3 seconds.
+
+**UNO:**![IMG_256](media/6411c0df531cf02124639c71bc3f8e08.jpeg)
+
+![IMG_256](media/aefd34141f5a652e6b0df426cc46dea8.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/6c38b1044627de15fa8374c2f3053916.jpeg) ![IMG_256](media/0acc0b17838d3394eb347ce28135f7a9.jpeg)
+
+### **Project 12: Hall Magnetic Sensor**
+
+![](media/27e8d67c5a1b3667cc29ff31ec8e8e0a.png)
+
+**Description**
+
+The KY-003 Hall Magnetic Sensor module is a switch that reacts to the presence of a magnetic field, turning itself on or off.
+
+It can sense the magnetic materials within a detection range up to 3cm.
+
+The detection range and the strength of magnetic field are proportional. The output is digital on/off. Compatible with popular microcontrolers like Arduino, Raspberry Pi and ESP32.
+
+**Specification**
+
+| Operating Voltage           | 4.5V to 24V                       |
+|-----------------------------|-----------------------------------|
+| Operating Temperature Range | -40°C to 85°C [-40°F to 185°F]    |
+| Board Dimensions            | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ 
+
+ **How Does It Work?**
+
+The Hall effect is due to the nature of the current in a conductor. Current consists of the movement of many small charge carriers, typically electrons, holes, ions (see Electromigration) or all three.
+
+When a magnetic field is present, these charges experience a force, called the Lorentz force. When such a magnetic field is absent, the charges follow approximately straight, 'line of sight' paths between collisions with impurities, phonons, etc.
+
+However, when a magnetic field with a perpendicular component is applied, their paths between collisions are curved so that moving charges accumulate on one face of the material. This leaves equal and opposite charges exposed on the other face, where there is a scarcity of mobile charges.
+
+The result is an asymmetric distribution of charge density across the Hall element, arising from a force that is perpendicular to both the 'line of sight' path and the applied magnetic field. The separation of charge establishes an electric field that opposes the migration of further charge, so a steady electrical potential is established for as long as the charge is flowing.
+
+![IMG_256](media/7e5b94e30b3baa8717368c5bd08838be.jpeg)
+
+This phenomenon is Hall Effect.
+
+ Pinout
+
+![](media/64d96ca7d3ed74d46b546a7b12a46ff2.png)
+
+SIN is the hall magnetic sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board power line (middle) and ground (-) to +5 and GND on the Arduino respectively.Connect signal (S) to pin 3 on the Arduino.
+
+![](media/edbb57e7ca31935412bdd41be93b889f.png)
+
+![](media/05c9d056ad1b0b773cf46237a3d82352.png)
+
+![](media/6f6e88acc91f459cab3f93a29dc7db3e.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 12
+
+Hall Magnetic
+
+By keyes
+
+\*/
+
+int led = 13;//LED pin
+
+int sensor = 3; //sensor pin
+
+int val; //numeric variable
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT); //set LED pin as output
+
+pinMode(sensor, INPUT); //set sensor pin as input
+
+}
+
+void loop()
+
+{
+
+val = digitalRead(sensor); //Read the sensor
+
+if(val == LOW) //when magnetic field is detected, turn led on
+
+{
+
+digitalWrite(Led, HIGH);
+
+}
+
+else
+
+{
+
+digitalWrite(Led, LOW);
+
+}
+
+}
+
+**Example Result**
+
+Wire it up and upload well the code to board, you will see that D13 indicator on PLUS board is off, and led on the module is also off.
+
+But if put a magnetic ball close to the hall module, you will see the D13 indicator on PLUS board is turned on, and led on the module is also turned on.
+
+**UNO:**
+
+![IMG_256](media/11fadbd91c54f430f7e1ef2985c5255d.jpeg) ![IMG_256](media/b82705299ed17fe072f01d219eb8b211.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/3d4ac24b80730d23c009afd3af24ac8c.jpeg) ![IMG_256](media/bdb3adb18c1ddde5ae38319830b259d8.jpeg)
+
+### **Project 13: Vibration Sensor Module**
+
+![](media/7f3cf11d7a0b53fda5f36b373a4e430f.png)
+
+**Description**
+
+![](media/c79390318bbf7ec6699a3168c3e91089.png)The KY-002 Vibration Switch Module detects shaking and knocking. When the module is moved, a spring mechanism will close the circuit sending a short high signal.It can be used with a variety of microcontrollers like Arduino, ESP32, Raspberry Pi and others.
+
+**Specification**
+
+| Operating Voltage | 5V                                |
+|-------------------|-----------------------------------|
+| Board Dimensions  | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ **How Does It Work?**
+
+As stated above, the functionality or working principle of the Vibration sensor and the Knock sensor are pretty similar.
+
+Inside the Vibration sensor is a center post that serves as the metal conductive leg of the sensor. Around the center post is a thin metal that is coiled up into a spring form.
+
+![IMG_256](media/ac460294215b048f8948c6ec736071dd.png)
+
+Once vibration is generated, the metal conductive leg and the thin metal spring will be in contact with each other and once this happens, current will directly flow from the metal conductive leg to the thin metal spring.
+
+![IMG_257](media/a6be791a2539572ad9b518fee809fbc2.jpeg)
+
+As current flow on both wires, a supply of 5 volts will be generated. With this, vibration will be detected by the sensor and will send out information to the microcontroller.
+
+There is also a 10k resistor onboard in this module. This resistor will limit the circulation of current from the powersource preventing any damage to the module.
+
+ Pinout
+
+![](media/86e953b49ba4f5628281d0e272485d5b.png)
+
+SIN is the vibration switch signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module signal pin (S) to pin 3 on the Arduino.Then connect the module’s power pin (middle) and ground (-) to +5V and GND on the Arduino respectively.
+
+![](media/9dace4f4db8d0898b79c29bf4a391932.png)
+
+![](media/782314932dc00cab22674e1e35120f09.png)![](media/50c22518472eceae916c1cc627eb415f.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 13
+
+Vibration Switch
+
+By keyes
+
+\*/
+
+int Led = 13; // define the LED Pin
+
+int shock = 3; // define the sensor Pin
+
+int val; // define a numeric variable val
+
+void setup () {
+
+pinMode (Led, OUTPUT); // LED pin as output
+
+pinMode (shock, INPUT); // input from KY-002 sensor
+
+}
+
+void loop () {
+
+val = digitalRead (shock); // read the value from KY-002
+
+if (val == HIGH ) {// when sensor detects shock, LED flashes
+
+digitalWrite(Led, LOW);
+
+} else {
+
+digitalWrite (Led, HIGH);
+
+}
+
+}
+
+**Example Result**
+
+After connecting the cable and uploading the code, the module will be vibrated and the D13 LED will be on for 3 seconds
+
+**UNO:**
+
+![IMG_256](media/c0dd1c70c6ba437c62dc187b87580b9d.jpeg) ![IMG_256](media/9336e58e49b7328da17a20a5ba542f31.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/6c4a062285a6aff5efa6e052d0922ccc.jpeg) ![IMG_256](media/f0415ba9b3b38c995239ea8bf9428779.jpeg)
+
+### **Project 14: Photo Interrupter Module**
+
+![](media/61a23a4e98a46ebdb5c71c68454f5941.png)
+
+**Description**
+
+![](media/81ebf9c0e212be192924e2b6a38663b1.png)The KY-010 Photo Interrupter module is a switch that will trigger a signal when light between the sensor’s gap is blocked.
+
+It is used for many applications including optical limit switches, pellet dispensing, general object detection, etc.
+
+This module is suitable for various electronics platforms like Arduino, Raspberry Pi, ESP32 and others.
+
+**Specification**
+
+| Operating Voltage | 3.3V \~ 5V                        |
+|-------------------|-----------------------------------|
+| Board Dimensions  | 18.5mm x 15mm [0.728in x 0.591in] |
+
+ **How Does It Work?**
+
+Upright part of this sensor is an infrared emitter and on the other side, it’s a shielded infrared detector. By emitting a beam of infrared light from one end to other end, the sensor can detect an object when an object passes through the beam.
+
+![IMG_257](media/20519af325d65d055bd8b70c1475438e.jpeg)
+
+**Usage Example: Detecting Voltage Change at the Phototransistor Side**
+
+![IMG_258](media/92a0afd635aa9f1dc6c99e6ec84c8fb8.jpeg)
+
+ Pinout
+
+![](media/cd0e76040b65b9ef634940024fdd7c1e.png)
+
+SIN is the photo Interrupter module signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the power line (middle) and ground (left) to +5V and GND respectively. Connect signal (S) to pin 3 on the Arduino.
+
+![](media/0c7e6961defe4c39c0605515a331d795.png)
+
+![](media/35d72c2b42ff08fbcce8297176d8da48.png)![](media/91b64eba6537d1ba1e3ad0df7283e304.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 14
+
+Photo Interrupter
+
+By keyes
+
+\*/
+
+int Led = 13; // define LED pin
+
+int buttonpin = 3; // define photo interrupter signal pin
+
+int val; //define a numeric variable
+
+void setup()
+
+{
+
+pinMode(Led, OUTPUT); // LED pin as output
+
+pinMode(buttonpin, INPUT); //photo interrupter pin as input
+
+}
+
+void loop()
+
+{
+
+val=digitalRead(buttonpin); //read the value of the sensor
+
+if(val == HIGH) // turn on LED when sensor is blocked
+
+{
+
+digitalWrite(Led,HIGH);
+
+}
+
+else
+
+{
+
+digitalWrite(Led,LOW);
+
+}
+
+}
+
+**Example Result**
+
+Done uploading the code to board, you can see both led on PLUS board and on module are turned on. Shown as below.
+
+When pick up a paper on groove joint of module, the signal is interrupted, and led1 on the module will be turned off.
+
+**UNO:**![IMG_256](media/1904cf0fd04c8be97aea59e99293b376.jpeg)
+
+![IMG_256](media/7dd41c9e38aa42f1e11bed7cfff0002e.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/2005a6d47069c74ad41118fdb9d62870.jpeg)![IMG_256](media/d995e93b8c3247f5be4d1b5cbec765db.jpeg)
+
+### **Project 15: Line Tracking Sensor**
+
+![](media/ef0c045b145fa941f18b0bbdbd430726.png)
+
+**Description**
+
+![](media/f8c7f40032c689fa177566fb5a754ad5.png)This Line Tracking Sensor can detect white line in black or black line in white. The single line-tracking signal provides a stable output signal TTL for a more accurate and more stable line. Multi-channel option can be easily achieved by installing required line-tracking robot sensors.
+
+| Operating Voltage           | 3.3V \~ 5V    |
+|-----------------------------|---------------|
+| Operating current           | \<10mA        |
+| Operating temperature range | 0°C \~ + 50°C |
+| Output Level                | TTL level     |
+
+**Specification**
+
+ **How Does It Work?**
+
+The KY-033 module detects if the surface in front of the IR transmitter/receiver absorbs or reflects light. A dark surface absorbs light while a light surface reflects light. If the surface is dark, the module Signal pin will be pulled HIGH. And if the surface is light, the signal pin will be LOW.
+
+![IMG_256](media/4782ccde74b72c3505ee336c1fac7ed6.jpeg)
+
+Pinout
+
+![](media/d60f560a54c26743e6bab7e4be0ccc56.png)
+
+SIN is the line-tracking sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module’s GND line (the leftmost pin) to GND on the Arduino and + (the second pin) to 5V.
+
+Connect signal (out) to pin 3 on the Arduino.
+
+![](media/e5ae16f9452d23a16bf483cd810a21b4.png)![](media/81ec96741ce7c3c19b5aae95a878a16e.png)
+
+![](media/8d801e2850b961ba577d154a171b2e51.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 15
+
+Line Tracking
+
+By keyes
+
+\*/
+
+void setup()
+
+{
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+Serial.println(digitalRead(3)); // print the data from the sensor
+
+delay(500);
+
+}
+
+**Example Result**
+
+Done uploading the code to board, open the serial monitor and set the baud rate as 9600, then you can see the data from the sensor.
+
+![](media/7b463887a4bd879defcee7db5d476fdc.png)
+
+**UNO:**
+
+![IMG_256](media/af682970c5cc737db3e21633eaddec44.jpeg) ![IMG_256](media/ac12d5c043bb991acaaf44509dcf620f.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/4791427d096521ab185807bb05c5dc25.jpeg)
+
+![IMG_256](media/fcea8e79e02b4f8849ecef284d4ee099.jpeg)
+
+### **Project 16: Infrared Obstacle Avoidance Sensor**
+
+![](media/05cc327b80e26f65c3b2fd45c03a572d.png)
+
+**Description**
+
+The KY-032 Obstacle Avoidance Sensor module is a distance-adjustable, infrared proximity sensor designed for wheeled robots.
+
+The sensor detection distance ranges from 2cm to 40cm, it can be adjusted by turning the potentiometer knob. The operating voltage is 3.3V-5V so it is suitable for a variety of microcontrollers like Arduino, ESP32, Teensy, ESP8266, Raspberry Pi, and others.
+
+It has strong adaptability to ambient light and it is fairly accurate to sense changes in the surrounding environment.
+
+**Specification**
+
+| Working voltage     | 3.3V – 5V DC                                                    |
+|---------------------|-----------------------------------------------------------------|
+| Working current     | ≥ 20mA                                                          |
+| Working temperature | -10°C – 50°C [14°F – 122°F]                                     |
+| Detection distance  | 2cm – 40cm [0.79in – 15.75in]                                   |
+| IO interface        | 4-wire interface (-/+/S/EN)                                     |
+| Output signal       | TTL level (low level if obstacle detected, high if no obstacle) |
+| Adjustment method   | multi-turn resistance adjustment                                |
+| IR pulse frequency  | 38kHz according to HS0038DB datasheet                           |
+| Effective angle     | 35°                                                             |
+| Board Size          | 1.6cm x 4cm [0.62in x 1.57in]                                   |
+| Weight              | 9g                                                              |
+
+ **How Does It Work?**
+
+The module produces a 38KHz square wave primarily made-up by the 555 Timer IC and VR1.
+
+This 38KHz pulse is used to switch on/off the IR LED. If there is an object in front of the IR LED, the infrared pulses are reflected and some of the reflected IR is detected by the IR receiver (HS0038BD).
+
+This would tell the module that there is an obstacle and will pull the signal pin S to LOW. If there is no obstacle, pin S will be HIGH. VR2 is used to adjust the distance the obstacle is detected. The module has a detection range of 2\~40cm.
+
+![IMG_256](media/0809395a1fd9593d99e7396a7f735005.jpeg)
+
+The EN pin and EN jumper are provided to have control over the module detection. Put a jumper at EN to have the module always enabled.
+
+If you want to have control over the module enable/disable, remove the jumper and connect the EN pin to HIGH to enable or LOW to disable.
+
+ Pinout
+
+![](media/a743585d7af39838b9b4cce4ef8c52ab.png)
+
+SIN is the obstacle avoidance sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+EN enable the obstacle avoidance sensor.
+
+**Connection Diagram**
+
+Connect the module’s GND line (the leftmost pin) to GND on the Arduino and + (the second pin) to 5V.Connect signal (out) to pin 3 on the Arduino.
+
+![](media/3976b1e773f0bb6ad8413a8cd80c4dcf.png)
+
+![](media/977e717084970d6952a369e7be028440.png)
+
+![](media/bd7b59ecde62c707da84504846886cfa.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 16
+
+Obstacle Avoidance
+
+By keyes
+
+\*/
+
+int ledPin = 13; // LED pin on arduino
+
+int detectorPin = 3; // obstacle avoidance sensor interface
+
+int val; // variable to store result
+
+void setup()
+
+{
+
+pinMode(ledPin, OUTPUT); // Define LED as output interface
+
+pinMode(detectorPin, INPUT); // Define obstacle avoidance sensor as input interface
+
+//digitalWrite(enablePin, HIGH); // Enable sensor
+
+}
+
+void loop()
+
+{
+
+val = digitalRead(detectorPin); // Read value from sensor
+
+if(val == LOW) // When the sensor detects an obstacle, the LED on the Arduino lights up
+
+{
+
+digitalWrite(ledPin, HIGH);
+
+}
+
+else
+
+{
+
+digitalWrite(ledPin, LOW);
+
+}
+
+}
+
+**Example Result**
+
+Done uploading the code to board, you can see the led on both PLUS board and obstacle detector sensor is turned on.
+
+If we put a foam block in front of the sensor, this time when sensor detects the obstacle, sled on the sensor will be turned on.
+
+![](media/4576596f651689d8390aa5caf142c506.png)
+
+**UNO:**
+
+![IMG_256](media/94e86f3db764ba187575635dd98077e6.jpeg)![IMG_256](media/dadde0666a7b7307000322f4649b5cb0.jpeg)
+
+**MEGA 2560:**
+
+![IMG_256](media/664bc8397d3a15cef4a1cb16fadb9fe4.jpeg)
+
+![IMG_256](media/c9897e89affb3d2f830c0d6ca5a63925.jpeg)
+
+### **Project 17: Photocell Sensor**
+
+![](media/a4106a3b59e26ffbe4baabd779c46c01.png)
+
+**Description**
+
+![](media/cd8bad53439bf51db0b87aa888280ca7.png)Photocell is commonly seen in our daily life and is mainly used in intelligent switch, also in common electronic design. To make it easier and more effective, we supply the corresponding modules.
+
+Photocell is a semiconductor. It has features of high sensitivity, quick response, spectral characteristic and R-value consistence, maintaining high stability and reliability in environment extremely such as high temperature and high humidity.
+
+It’s widely used in automatic control switch fields like cameras, garden solar lights, lawn lamps, money detectors, quartz clocks, music cups, gift boxes, mini night lights, sound and light control switches, etc.
+
+The Photocell sensor compatible with many popular microcontrollers like Arduino, ESP32 and others.
+
+**Specification**
+
+| Operating Voltage | 3.3V \~ 5V |
+|-------------------|------------|
+| Output Type       | Analog     |
+
+ **How Does It Work?**
+
+The flow of current in any metal is caused by electrons and they are categorized by the number of electrons flowing through it as Insulator, Conductor and Semiconductors.
+
+These are categorized depending on the energy gap between the valence band and the conduction band called the band gap.
+
+![IMG_256](media/77e068f4fe2c9b624c4fec7c63a2f78b.jpeg)
+
+As stated above, a [photoresistor](https://microdaz.com/product/ky-018-photo-resistor-module/) is made up of high resistance semiconductor as the available electrons for conduction in it are few. The zigzag pattern on top of the photoresistor is the semiconductor Cadmium Sulfide. It is deposited this way to procure the required resistance and power rating.
+
+![IMG_257](media/a7730665f17fc2139c074eeafe1db909.jpeg)
+
+As light hits the [photoresistor](https://microdaz.com/product/ky-018-photo-resistor-module/), the electrons in the valence band or the valence electrons assimilate energy enough to break its bond with the atom and jump to the conduction band.
+
+![IMG_258](media/e6d2e9e72875cd045d4ad022d1d82e0c.jpeg)
+
+This process of transfer of electrons generates current flow to the [photoresistor](https://microdaz.com/product/ky-018-photo-resistor-module/) and as more and more electrons transfer to the conduction band, current flow increases and results in the decrease of resistance in the photoresistor.
+
+![IMG_259](media/17794990bdb3814708ee256fa4eb4155.jpeg)
+
+ Pinout
+
+![](media/995c899620115d454bd20b5cccb4644c.png)
+
+SIN is the photocell sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the Power line (middle) and ground (-) to +5 and GND respectively. Connect signal (S) to pin A2 on the Arduino.
+
+![](media/5da55b20575b39e67a78a7cb4e6b21c1.png)
+
+![](media/88db88a0a7fff6b668d0f35c0c1fc0bc.png)
+
+![](media/714898cb4a3b6e2c04405099de4119aa.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 17
+
+Photocell
+
+By keyes
+
+\*/
+
+int sensorPin = 2; //define analog pin 2
+
+int value = 0;
+
+void setup() {
+
+Serial.begin(9600);
+
+}
+
+void loop() {
+
+value = analogRead(sensorPin);
+
+Serial.println(value, DEC); // light intensity
+
+// high values for bright environment
+
+// low values for dark environment
+
+delay(100);
+
+}
+
+**Example Result**
+
+Done wiring and powered up, upload well the code, then open the serial monitor, if cover the photocell on the sensor with your hand, you will see the analog value decrease.
+
+![IMG_256](media/b39987dfb73cfd39da1c6bbcb8d58ce4.jpeg) ![IMG_256](media/5961dfb8d1dc64943510693db1a45724.jpeg)
+
+![](media/00dd9321cde435f902dc6c53b65ead3f.png)
+
+### **Project 18: Water level Sensor**
+
+![](media/48fca6f54c4deedf6fb8a39e3ac3c7b5.png)
+
+**Description**
+
+![](media/1b841884827f3de5d72b26bb6f1332f2.png)The water level sensor is easy- to-use, portable and cost-effective, designed to identify and detect water level and water drop.
+
+This small sensor can measure the volume of water drop or water quantity through an array of traces of exposed parallel wires.
+
+**Features**
+
+-   smooth conversion between water quantity and analog quantity;
+-   strong flexibility, outputting basic analog value;
+-   low power consumption and high sensitivity;
+-   directly connect to microprocessor or other logic circuits, suitable for a variety of development boards and controllers such as Arduino controller, STC single-chip microcomputer, AVR single-chip microcomputer and more.
+
+**Specifications**
+
+| Operating voltage   | DC5V                         |
+|---------------------|------------------------------|
+| Operating current   | ﹤20mA                       |
+| Sensor type         | Analog                       |
+| Detection area      | 40mm x16mm                   |
+| Production process  | FR4 double-side tinned       |
+| Shape design        | Anti-skid semi-lunar recess  |
+| Working Humidity    | 10%-90% without condensation |
+| Working Temperature | 10℃-30℃                      |
+
+ **How Does It Work?**
+
+The working of the water level sensor is pretty straightforward.
+
+The series of exposed parallel conductors, together acts as a **variable resistor** (just like a potentiometer) whose resistance varies according to the water level.
+
+The change in resistance corresponds to the distance from the top of the sensor to the surface of the water.
+
+The resistance is inversely proportional to the height of the water:
+
+The more water the sensor is immersed in, results in better conductivity and will result in a lower resistance.
+
+![IMG_256](media/c392a2d336c21fb7bb74786ba1b4cb37.GIF)
+
+The less water the sensor is immersed in, results in poor conductivity and will
+
+result in a higher resistance.
+
+The sensor produces an output voltage according to the resistance, which by measuring we can determine the water level.
+
+ Pinout
+
+![](media/380027b265e0436e6628cd19adda3479.png)
+
+SIN is the water level sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+![](media/8a35e77cb92a5f428f3b952789c0a37e.png)
+
+![](media/69063f56030101022fb735b34c722bd4.png)![](media/a1cb9ab0664bb3a3381994e88f445d71.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 18
+
+water level
+
+By keyes
+
+\*/
+
+int analogPin = 0; //connect water sensor to analog interface 0
+
+int led = 13; //LED to digital interface 13
+
+int val = 0; //define the initial value of variable ‘val’ as 0
+
+int data = 0; //define the initial value of variable ‘data’ as 0
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT); //define led as output pin
+
+Serial.begin(9600); //set baud rate at 9600
+
+}
+
+void loop()
+
+{
+
+val = analogRead(analogPin); //read and assign analog value to variable ’val’
+
+if(val\>700){ //decide whether variable ‘val’ is over 700
+
+digitalWrite(led,HIGH); //turn on LED when variable ‘val’ is over 700
+
+}
+
+else{
+
+digitalWrite(led,LOW); //turn off LED when variable ‘val’ is under 700
+
+}
+
+data = val; //variable ’val’ assigns value to variable ‘data’
+
+Serial.println(data); //print variable ‘data’ by Serial.print
+
+delay(100);
+
+}
+
+**Example Result**
+
+For example, using the same circuit above, you’ll see the close to the following values in the serial monitor when the senor is dry (0) and when it is partially submerged in the water (\~420) and when it is completely submerged (\~520).
+
+![IMG_256](media/c3805ff80d6e9c594ee285e6bc37bded.png)
+
+Furthermore, you can set an alarm value and connect a buzzer to make an alarm.
+
+The LED can’t light up when water level haven’t reach alarm value. If water level reaches the alarm value, LED will be turned on and buzzer will sound to make an alarm.
+
+![](media/48220ab5a4ddc3e9c6edf58eba54cd26.png)
+
+### **Project 19: Soil Humidity Sensor**
+
+![](media/bb1c81e52c5e8999e4aba7a9c2b29f5d.png)
+
+**Description**
+
+![](media/534ec357118ab110fff66a77bad695d0.png)This is a simple soil humidity sensor aimed to detect the soil humidity. If the soil is in lack of water, the analog value output by the sensor will decrease, otherwise, it will increase.
+
+If you use this sensor to make an automatic watering device, it can detect whether your botany is thirsty to prevent it from withering when you go out.
+
+Combine this sensor with Arduino controller can make your plant more comfortable and your garden more smarter.
+
+The soil humidity sensor module is not as complicated as you might think, so if you need to detect the soil in your project, it will be your best choice.
+
+The sensor is set with two probes which are inserted into the soil. If the current goes through the soil, the sensor will get resistance value by reading the current changes between the two probes, then convert the resistance value into moisture content.
+
+The higher moisture (less resistance), the higher conductivity the soil has.
+
+The surface of the sensor has undergone metallization process to prolong its service life. Insert it into the soil and then use the AD converter to read it. With the help of this sensor, the plant can remind of you: I need water.
+
+**Specification**
+
+1.  Power Supply Voltage: 3.3V or 5V
+2.  Working Current: ≤ 20mA
+3.  Output Voltage: 0-2.3V (When the sensor is totally immersed in water, the voltage will be 2.3V)
+4.  The higher humidity, the higher the output voltage.
+5.  Sensor type: Analog output
+6.  Interface: Pin1- signal, Pin2- GND, Pin3 - VCC
+
+ **How Does It Work?**
+
+The working of the soil moisture sensor is pretty straightforward.
+
+The fork-shaped probe with two exposed conductors, acts as a **variable resistor** (just like a potentiometer) whose resistance varies according to the water content in the soil.
+
+![IMG_256](media/b89d46a0abbeb3eb175c5f93bc58efcb.GIF)
+
+This resistance is inversely proportional to the soil moisture:
+
+The more water in the soil means better conductivity and will result in a lower resistance.
+
+The less water in the soil means poor conductivity and will result in a higher resistance.
+
+The sensor produces an output voltage according to the resistance, which by measuring we can determine the moisture level.
+
+ Pinout
+
+![](media/1c4d0626fb34f06467f2b6aa49512e2c.png)
+
+SIN is the soil humidity sensor signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the S pin of module to Analog A0 of PLUS board, connect the negative pin to GND port, positive pin to 5V port.
+
+![](media/8bff514836e4c7f316ddf407b30efd00.png)
+
+![](media/bfed7b7a6f7707c41842d422c9a61c02.png)![](media/83eeef881a54ba887e1a24ba72001de8.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 19
+
+soil humidity
+
+By keyes
+
+\*/
+
+\## Example code for the moisture sensor
+
+\## Connect the sensor to the A0(Analog 0) pin on the Arduino board
+
+\## the sensor value description
+
+\## 0 \~300 dry soil
+
+\## 300\~700 humid soil
+
+\## 700\~950 in water
+
+\*/
+
+void setup(){
+
+Serial.begin(57600);
+
+}
+
+void loop(){
+
+Serial.print("Moisture Sensor Value:");
+
+Serial.println(analogRead(0));
+
+delay(100);
+
+}
+
+**Example Result**
+
+Done wiring and powered up, upload well the code, then open the serial monitor and set the baud rate as 57600, you will see the value. When the sensor detects the moisture, the value will make corresponding changes. Shown below.
+
+![](media/7888667e47a7626d696ea0a7dcdcaf2c.png)
+
+### **Project 20: Flame Sensor**
+
+![](media/c70156bb42411ff975bb1df34f93fced.png)
+
+**Description**
+
+![](media/1a37c02fdd2b03b7665a6d7932c1ede7.png)The KY-026 Flame Sensor module detects infrared light emitted by fire. This module has both digital and analog outputs and a potentiometer to adjust the sensitivity. Commonly used in fire detection systems.Compatible with Arduino, Raspberry Pi, ESP32 and other microcontrollers.
+
+This flame sensor can be used to detect fire or other lights with wavelength stands at 760nm \~ 1100nm.
+
+In the fire-fighting robot game, the flame plays an important role in the probing, which can be used as the robot's eyes to find fire source.
+
+**Specification**
+
+| Operating Voltage             | 3.3V \~ 5.5V                  |
+|-------------------------------|-------------------------------|
+| Infrared Wavelength Detection | 760nm \~ 1100nm               |
+| Sensor Detection Angle        | 60°                           |
+| Board Dimensions              | 1.5cm x 3.6cm [0.6in x 1.4in] |
+
+ **How Does It Work?**
+
+This type of infrared flame sensors is usually incorporated with a standard measurement using LM393 comparator, which allows to obtain the reading **in both analog and digital outputs** when a certain threshold is exceeded, which is regulated through a potentiometer located in the plate.
+
+![](media/a327a156d8beae234576b80a69ac5683.png)
+
+As we can see the wavelength of this cheap and small flame sensors are will not perform well when compared to industrial sensors. These may even affected by indoor lighting which can lead to numerous false positives.
+
+Therefore, the sensitivity and reliability of these cheap flame sensors **are not enough to consider them a true security device**, although they can be interesting in small electronics projects and for educational purposes, such as sounding an alarm or activating an LED when detecting the flame of a lighter.
+
+ Pinout
+
+![](media/a050f31d95a845995c754783b3fa28a0.png)
+
+DOUT is the flame sensor digital pin which we connect to the Arduino.
+
+AOUT is the flame sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board’s analog output (A) to pin A0 on the Arduino and the digital output (D) to pin 2.Connect the power line (+) and ground (G) to 5V and GND respectively.
+
+![](media/6bbb9275f1c356e270cb78837c06ee04.png)![](media/82f8a3daa593a4413562d56357d54757.png)
+
+![](media/6411a74c463a0c5750f9c1bf45df7871.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 20
+
+Flame Sensor
+
+By keyes
+
+\*/
+
+int led = 13; // define the LED pin
+
+int digitalPin = 2; // KY-026 digital interface
+
+int analogPin = A0; // KY-026 analog interface
+
+int digitalVal; // digital readings
+
+int analogVal; //analog readings
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT);
+
+pinMode(digitalPin, INPUT);
+
+//pinMode(analogPin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin);
+
+if(digitalVal == HIGH) // if flame is detected
+
+{
+
+digitalWrite(led, HIGH); // turn ON Arduino's LED
+
+}
+
+else
+
+{
+
+digitalWrite(led, LOW); // turn OFF Arduino's LED
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value to serial
+
+delay(100);
+
+}
+
+**Example Result**
+
+Use **Tools** \> **Serial Plotter** on the Arduino IDE to visualize the values on the analog interface, in this example we used a lighter to create a small flame every couple of seconds. You can see the values decreasing as the flame gets closer to the sensor and then increasing when the flame moves away from the sensor.
+
+![](media/12ddef08be7162aee7ff6f8064a613f4.png)
+
+### **Project 21: Linear Magnetic Hall Sensor**
+
+![](media/19aa29069931ec110e57c82d06748d8f.png)
+
+**Description**
+
+The KY-024 Linear magnetic Hall sensor reacts in the presence of a magnetic field. It has a potentiometer to adjust the sensitivity of the sensor and it provides both analog and digital outputs.
+
+The digital output acts as a switch that will turn on/off when a magnet is near, similar to the [KY-003](https://arduinomodules.info/ky-003-hall-magnetic-sensor-module/). On the other hand, the analog output can measure the polarity and relative strength of the magnetic field.Compatible with popular electronics platforms like Arduino, Raspberry Pi, Esp32, Teensy and others.
+
+**Specification**
+
+| Operating Voltage | 2.7V to 6.5V                                 |
+|-------------------|----------------------------------------------|
+| Sensitivity       | 1.0 mV/G min., 1.4 mV/G typ., 1.75 mV/G max. |
+| Board Dimensions  | 1.5cm x 3.6cm [0.6in x 1.4in]                |
+
+ **How Does It Work?**
+
+The KY-024 module consists of a linear Hall effect sensor SS49E and a double differential comparator LM393, a potentiometer BOCHEN 3296). The comparator coupled with the potentiometer allows to compare the sensor value with a threshold value in order to use the sensor as an all-or-nothing sensor. Two leds are present on the module. The led1 indicates that the sensor is supplied with voltage and the led2 indicates that a magnetic field is detected.
+
+![IMG_256](media/715b220de9e1a89339f5a5dc26cf2dde.jpeg)
+
+ Pinout
+
+![](media/98240d76037bb87aa02406f468b9e3cc.png)
+
+DOUT is the linear hall sensor digital pin which we connect to the Arduino.
+
+AOUT is the linear hall sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect board power line (+) and ground (G) to 5V and GND on the Arduino respectively.Connect the digital signal pin (D0) to pin 3 and the analog signal pin (A0) to pin A0 on the Arduino.
+
+![](media/e2a3e456e64ab61cbc6949d2ef03a05e.png)![](media/90f5b283cdd54ece0fd774d4ca419c3f.png)![](media/f411afb9d4cbecf59bb49d819b019c97.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 21
+
+Linear Magnetic Hall
+
+By keyes
+
+\*/
+
+int led = 13 ; // LED on arduino
+
+int digitalPin = 3; // linear Hall magnetic sensor digital interface
+
+int analogPin = A0; // linear Hall magnetic sensor analog interface
+
+int digitalVal ; // digital readings
+
+int analogVal; // analog readings
+
+void setup ()
+
+{
+
+pinMode (led, OUTPUT);
+
+pinMode (digitalPin, INPUT);
+
+//pinMode(analogPin, INPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop ()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin) ;
+
+if (digitalVal == HIGH) // When magnetic field is present, Arduino LED is on
+
+{
+
+digitalWrite (led, HIGH);
+
+}
+
+else
+
+{
+
+digitalWrite (led, LOW);
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value
+
+delay(100);
+
+}
+
+**Example Result**
+
+Setting analog pin as input (line 11) is not necessary, the [analogRead()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) function will automatically set the pin as analog input when used.
+
+Use **Tools** \> **Serial Plotter** on the Arduino IDE to visualize the changes on intensity and polarity of the magnetic field.
+
+![IMG_256](media/a850153061f27b2da194fce371a4c48a.jpeg) ![IMG_256](media/2414d4c96af232a50ef5a9386f2488a2.jpeg)
+
+![](media/21fef1d9741d471a6d03a10118072619.png)
+
+### **Project 22: Metal Touch Sensor**
+
+![](media/2f4333a35da384beefbe5e3bfdd060d6.png)
+
+**Description**
+
+The KY-036 metal touch sensor module features a Darlington and PN transistor, the signal of which is controlled by LM393 comparator IC which consists of two comparators. When you touch the bar wire meant over the transistor which is represented by the base of the transistor.
+
+**Specification**
+
+| Supply Voltage | 3.3V to 5V         |
+|----------------|--------------------|
+| Interface      | analog and digital |
+| Size           | 34 x 16 mm         |
+| Weight         | 4g                 |
+
+ 
+
+ **How Does It Work?**
+
+Basically, the functionality of the KY-036 Metal Touch sensor module is divided into three main components first the sensor unit at the front of the module which measures the area physically and sends an analog signal to the second unit the amplifier.
+
+The amplifier basically amplifies the signal and according to the resistance value of the potentiometer and sends the signal to the analog output of the module also you can set the sensitivity of the sensor by adjusting the knob of the potentiometer. If you rotate it in clockwise direction you can increase the sensitivity and if you rotate it in anti-clockwise direction you can reduce the sensitivity as shown in the diagram.![IMG_256](media/921f112fadc20b4e800952a449f63dd2.jpeg)
+
+The comparator will switches the digital out and turn on the led if the signal falls under a specific value.
+
+ Pinout
+
+![](media/96bbe0a4aa3761811f401c2b3937dc6a.png)
+
+DOUT is the metal touch sensor digital pin which we connect to the Arduino.
+
+AOUT is the metal touch sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board’s analog output (A0) to pin A0 on the Arduino and the digital output (D0) to pin 3.Connect the power line (+) and ground (G) to 5V and GND respectively.
+
+![](media/6cc3b996620b809cd58f655e39f234cd.png)
+
+![](media/74cfd9ed048c45a74adb2bb53090e0c4.png)![](media/ad4a487dda6a66fade141f83d5a53fb2.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 22
+
+Metal Touch
+
+By keyes
+
+\*/
+
+int led = 13; // define the LED pin
+
+int digitalPin = 3; // KY-036 digital interface
+
+int analogPin = A0; // KY-036 analog interface
+
+int digitalVal; // digital readings
+
+int analogVal; //analog readings
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT);
+
+pinMode(digitalPin, INPUT);
+
+//pinMode(analogPin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin);
+
+if(digitalVal == HIGH) // if magnetic field is detected
+
+{
+
+digitalWrite(led, HIGH); // turn ON Arduino's LED
+
+}
+
+else
+
+{
+
+digitalWrite(led, LOW); // turn OFF Arduino's LED
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value to serial
+
+delay(100);
+
+}
+
+**Example Result**
+
+Use **Tools** \> **Serial Plotter** on the Arduino IDE to visualize the values on the analog interface, use a magnet to trigger the switch.
+
+![](media/ea3dd17668e1a3b339b63fa25e013f2e.png)
+
+### **Project 23: Reed Switch Module**
+
+![](media/60424cdf0dfb9de710feb796b8d8c55c.png)
+
+**Description**
+
+The KY-025 Reed Switch Module is a small electrical switch operated by an applied magnetic field, commonly used as proximity sensor.
+
+The module has both digital and analog outputs. A trimmer is used to calibrate the sensitivity of the sensor.Compatible with Arduino, Raspberry Pi, ESP32 and other microcontrollers.
+
+Reed Switch is a special switch and a main component for reed relay and proximity switch.
+
+Reed switch is usually comprised of two soft magnetic materials and metal reed contacts which will disconnect itself when there is no magnetic.
+
+In addition, some reed switches are also equipped with another reed acting as the third normally-closed contact. These reed contacts are encapsulated in a glass tube fulled of inert gases(such as nitrogen and helium) or in a vacuum glass tube.
+
+The reeds encapsulated in the glass tube are placed in parallel with ends overlapped. Certain amount of space or mutual contact will be reserved to constitute the normally-open or normally-closed contacts of the switch.
+
+Reed switch can be used as for count, limit or other purposes.
+
+For instance, a kind of bike-kilometer is constituted by sticking magnetic to the tire and mounting reed switch aside.
+
+You can also mount reed switch on the door for alarming purpose or as switches.
+
+Reed switch has been widely applied in household appliances, cars, communication, industry, healthcare and security areas.
+
+Furthermore, it can also be applied to other sensors and electric devices such as liquidometer, door magnet, reed relay, oil level sensor and proximity sensor(magnetic sensor). It can be used under high-risk environment.
+
+**Specification**
+
+This module consist of a 2x14mm normally open [reed switch](https://en.wikipedia.org/wiki/Reed_switch), an LM393 dual differential comparator, a 3296W-104 trimmer pontetiometer, 6 resistors, 2 LEDs and 4 male header pins.
+
+| Operation Voltage   | 3.3V \~ 5.5V                  |
+|---------------------|-------------------------------|
+| Working current     | ≥20mA                         |
+| Working temperature | －10℃ to ＋50℃                |
+| Detection distance  | ≤10mm                         |
+| Board Dimensions    | 1.5cm x 3.6cm [0.6in x 1.4in] |
+
+ Reed Switch Overview
+
+A typical reed switch contains a pair of metal reeds made of a ferromagnetic material (something that gets magnetized easily but loses magnetism when it leaves a magnetic field). The surfaces of the reed contacts are plated with hardwearing metals such as rhodium, ruthenium, palladium or iridium to give them a longer life as they switch on and off millions of times.
+
+The reeds are hermetically sealed inside a tubular glass envelope to keep them free of dust and dirt. The [hermetic sealing](https://en.wikipedia.org/wiki/Hermetic_seal) of reed switches makes them suitable for use in explosive environments where small sparks from conventional switches would constitute a hazard. The glass tube is filled with an inert gas, usually nitrogen, or a vacuum to prevent oxidation of the contacts.
+
+![IMG_256](media/24e2ee83e208b97b4d56d60a8502736e.jpeg)
+
+Typically, contacts are made of a nickel-iron alloy that is easy to magnetize (has high magnetic permeability) but does not stay that way for long (has low magnetic retentivity). Being a mechanical device, they take some time to respond to changes in the magnetic field – in other words, their switching speed is low (typically 0.6 ms turn-on time, 0.2 ms turn-off time) compared to electronic switches.
+
+In the presence of a magnetic field, both contacts move (instead of just one) and they form a flat, parallel area of ​​contact with each other. This helps to increase the life and reliability of the reed switch.
+
+A reed switch only detects the presence of a magnetic field and does not measure its strength. If you are interested in measuring strength, an analog Hall Effect sensor is a better option to consider.
+
+ **How Does It Work?**
+
+The key to understanding how reed switches work is to realize that they are part of a magnetic circuit, as well as an electrical one – magnetism flows through them as well as electricity.
+
+As you bring a magnet closer to the reed switch, the entire switch becomes a part of the “magnetic circuit” including the magnet (the dotted line in the image shows part of the magnetic field).
+
+![IMG_257](media/35f8973de2b02ced6c6d37fcbb8f4b55.png)
+
+The two contacts of a reed switch become opposite magnetic poles, which is why they attract and snap together. It doesn’t matter which end of the magnet you bring closer: the contacts still polarize in opposite ways and attract each other.
+
+When you take the magnet away, the contacts separate and return back to their original position.
+
+![IMG_258](media/01cd3a03aee8701b04329da3b66b135a.GIF)
+
+A reed switch like this is normally open (NO). This means ‘normally’ when the switch is unaffected by the magnetic field, the switch is open and does not conduct electricity. When a magnet comes close enough to activate the switch, the contacts close and current flows through.
+
+In these illustrations, the movement of the contacts is largely exaggerated. Real reed switches have contacts that are only a few microns apart (about ten times thinner than a human hair). So the movement is not visible to the naked eye. Thanks to [Zátonyi Sándor](https://en.wikipedia.org/wiki/File:Reed_switch.ogv) for sharing macroscopic photos of the reed switch.
+
+![IMG_259](media/de3350b57950d5f15bae37172b76c76f.GIF)
+
+ Pinout
+
+![](media/7a20dbc52db2a47a260e805593ac3a59.png)
+
+DOUT is the reed switch digital pin which we connect to the Arduino.
+
+AOUT is the reed switch analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board’s analog output (A0) to pin A0 on the Arduino and the digital output (D0) to pin 3.Connect the power line (+) and ground (G) to 5V and GND respectively.
+
+![](media/8a72ae2eb71c53ab62b9cffbf6ffbbc3.png)
+
+![](media/90e6d673a43256f68ebe43e0a0e54bb7.png)
+
+![](media/530424402b4892eb04d8ab5b035616a6.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 23
+
+Reed Switch
+
+By keyes
+
+\*/
+
+int led = 13; // define the LED pin
+
+int digitalPin = 3; // KY-025 digital interface
+
+int analogPin = A0; // KY-025 analog interface
+
+int digitalVal; // digital readings
+
+int analogVal; //analog readings
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT);
+
+pinMode(digitalPin, INPUT);
+
+//pinMode(analogPin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin);
+
+if(digitalVal == HIGH) // if magnetic field is detected
+
+{
+
+digitalWrite(led, HIGH); // turn ON Arduino's LED
+
+}
+
+else
+
+{
+
+digitalWrite(led, LOW); // turn OFF Arduino's LED
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value to serial
+
+delay(100);
+
+}
+
+**Example Result**
+
+Use **Tools** \> **Serial Plotter** on the Arduino IDE to visualize the values on the analog interface, use a magnet to trigger the switch.
+
+![IMG_256](media/95607657fc7a961fa252e13d4ce46e4f.jpeg)
+
+![IMG_256](media/299496019a632cee67bfa1b7fbbe9c4d.jpeg)
+
+![](media/6322f3c7d57f396dded22f8cb7575634.png)
+
+### **Project 24: Digita Temperature Sensor**
+
+![](media/de6ed50629655fdce32d490724be81b0.png)
+
+**Description**
+
+![](media/b338379ac763a544af4745268ad27ccb.png)The KY-028 Digital Temperature Sensor measures temperature changes based on thermistor resistance. This module has both digital and analog outputs, there’s a potentiometer to adjust the detection threshold on the digital interface.Compatible with Arduino, Raspberry Pi, ESP32, and other microcontrollers.
+
+This module is based on the working principle of a thermistor (resistance varies with temperature change in the environment).
+
+It can sense temperature changes in the surrounding and send the data to the analog IO of Arduino board.
+
+All we need to do is to convert the sensor’s output data into degrees Celsius temperature via simple programming, finally displaying it on the monitor.
+
+It's both convenient and effective, thus it is widely applied to gardening, home alarm system and other devices.
+
+**Specification**
+
+Operating Voltage 3.3V \~ 5.5V
+
+Temperature Measurement Range -55°C to 125°C [-67°F to 257°F]
+
+Measurement Accuracy ±0.5°C
+
+Board Dimensions 15mm x 36mm [0.6in x 1.4in]
+
+ **How Does It Work?**
+
+The Thermistor or simply **Therm**ally Sensitive Res**istor** is a **temperature sensor** that works on the principle of varying resistance with temperature. They are made of semiconducting materials. The circuit symbol of the thermistor is shown in the figure.
+
+![Thermistor: Construction, Working Principle, Types and Applications 1](media/7b397ebe02877827bacfad37fc985a63.png)
+
+The thermistor works on the simple principle of change in resistance due to a change in temperature. When the ambient temperature changes the thermistor starts self-heating its elements. its resistance value is changed with respect to this change in temperature. This change depends on the type of thermistor used. The resistance temperature characteristics of different types of thermistors are given in the following section.
+
+**NTC Thermistor**
+
+NTC stands for Negative Temperature coefficient. They are ceramic semiconductors that have a high Negative Temperature Coefficient of resistance. The resistance of an NTC will decrease with increasing temperature in a non-linear manner.
+
+Circuit symbols of NTC and PTC thermistors are shown in the following figure.
+
+![Thermistor: Construction, Working Principle, Types and Applications 3](media/b07d58f8c5e6b99b2f76cab5fad78e1b.png)
+
+**PTC Thermistor**
+
+PTC thermistors are Positive Temperature Coefficient resistors and are made of polycrystalline ceramic materials. The resistance of a PTC will increase with increasing temperature in a non-linear manner. The PTC thermistor shows only a small change of resistance with temperature until the switching point(TR) is reached.
+
+The temperature resistance characteristics of an NTC and a PTC is shown in the following figure.
+
+![Thermistor: Construction, Working Principle, Types and Applications 4](media/42b3b51cc19d567fbbbd3fc70348f624.png)
+
+ Pinout
+
+![](media/29199bde6bd122dffdfd8da92d39a29d.png)
+
+DOUT is the digital temperature sensor digital pin which we connect to the Arduino.
+
+AOUT is the digital temperature sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board’s analog output (A0) to pin A0 on the Arduino and the digital output (D0) to pin 3.Connect the power line (+) and ground (G) to 5V and GND respectively.
+
+![](media/2841055b619bfd24fd8b9d88cca5d9cc.png)![](media/0960259b7519d4fc65a5564c56a4180d.png)
+
+![](media/9889eb3b1b863da2a4cd1aa4f0d8d1b7.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 24
+
+Digital Temperature
+
+By keyes
+
+\*/
+
+\##include \<math.h\>
+
+void setup()
+
+{
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+double val=analogRead(0);
+
+double fenya=(val/1023)\*5;
+
+double r=fenya/(5-fenya)\*10000;
+
+Serial.println( 1/( log(r/10000) /3950 + 1/(25+273.15))-273.15);
+
+delay(1000);
+
+}
+
+**Example Result**
+
+Done wiring and powered up as the above figure, upload well the code to the board, then open the serial monitor of Arduino IDE, you will see the current temperature value.
+
+![](media/5e0b720b4431e4ebe203ecfdcbf7349e.png)
+
+### **Project 25: High-sensitivity sound sensor**
+
+![](media/6ac46cab3c98cd643a045a6c37a9bcde.png)
+
+**Description**
+
+![](media/9411fddd97afe35a5881451827c04ed3.png) High-sensitivity sound sensor is typically used in detecting the volume of ambient sounds. The sensor comes with a potentiometer, so that you can turn it to adjust the signal gain.
+
+You can use it to make some interesting and interactive works, such as a voice operated switch.
+
+**Specification**
+
+| Operating Voltage          | 2v \~ 2.5v    |
+|----------------------------|---------------|
+| Working Current            | 10mA          |
+| Diameter                   | 5mm           |
+| Package Type               | Diffusion     |
+| Color                      | Red + Yellow  |
+| Beam Angle                 | 150           |
+| Wavelength                 | 571nm + 644nm |
+| Luminosity Intensity (MCD) | 20-40; 40-80  |
+
+ **How Does It Work?**
+
+Inside the microphone is the thin diaphragm, which is actually one plate of a capacitor. The second plate is the backplate, which is close to and parallel to the diaphragm.
+
+![IMG_256](media/d8c335ee61d0c8f025840792bdf6f685.GIF)
+
+When you speak into the microphone, sound waves created by your voice strike the diaphragm, causing it to vibrate.
+
+When the diaphragm vibrates in response to sound, the capacitance changes as the plates get closer together or farther apart.
+
+As the capacitance changes, the voltage across the plates changes, which by measuring we can determine the amplitude of the sound.
+
+ Hardware Overview
+
+The sound sensor is a small board that combines a microphone (50Hz-10kHz) and some processing circuitry to convert sound waves into electrical signals.
+
+This electrical signal is fed to on-board LM393 High Precision Comparator to digitize it and is made available at OUT pin.
+
+![IMG_256](media/4b5999c21dd83b06ca816d27415fa8de.jpeg)
+
+The module has a built-in potentiometer for sensitivity adjustment of the OUT signal.
+
+You can set a threshold by using a potentiometer; So that when the amplitude of the sound exceeds the threshold value, the module will output LOW otherwise HIGH.
+
+This setup is very useful when you want to trigger an action when certain threshold is reached. For example, when the amplitude of the sound crosses a threshold (when a knock is detected), you can activate a relay to control the light. You got the idea!
+
+Tip: Rotate the knob counterclockwise to increase sensitivity and clockwise to decrease it.
+
+![IMG_257](media/824c444c506bcd9a06fd2e946d297eb5.jpeg)
+
+Apart from this, the module has two LEDs. The Power LED will light up when the module is powered. The Status LED will light up when the digital output goes LOW.
+
+ Pinout
+
+![](media/fc97ac10b0cf18b1ca0cd0d416a123c1.png)
+
+DOUT is the sound sensor digital pin which we connect to the Arduino.
+
+AOUT is the sound sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board’s analog output (A0) to pin A0 on the Arduino and the digital output (D0) to pin 3.Connect the power line (+) and ground (G) to 5V and GND respectively.
+
+![](media/c4382760d32f0bd678e97373f0e94592.png)
+
+![](media/fb5144fc74fe94151487ff23c17e196c.png)![](media/4abc9676a04713e564917eddc8205eca.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 25
+
+High-sensitivity sound
+
+By keyes
+
+\*/
+
+int led = 13; // define the LED pin
+
+int digitalPin = 3; // KY-037 digital interface
+
+int analogPin = A0; // KY-037 analog interface
+
+int digitalVal; // digital readings
+
+int analogVal; //analog readings
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT);
+
+pinMode(digitalPin, INPUT);
+
+//pinMode(analogPin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin);
+
+if(digitalVal == HIGH) // if temperature threshold reached
+
+{
+
+digitalWrite(led, HIGH); // turn ON Arduino's LED
+
+}
+
+else
+
+{
+
+digitalWrite(led, LOW); // turn OFF Arduino's LED
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value to serial
+
+delay(100);
+
+}
+
+**Example Result**
+
+Done wiring and powered up, upload well the code, then open the serial monitor and set the baud rate as 9600, you will see the analog value. When talking toward the micro head, the value will increase. Shown below.
+
+![](media/190a56777a47ee776e2a25eae84daff6.png)
+
+### **Project 26：Analog Sound Sensor**
+
+![](media/424183e8acc300032bed2a063fb90681.png)
+
+**Description**
+
+This module is made of three functional elements, the sensor on the front of the module which performs the measurement, then the analog signal is sent to the amplifier.
+
+This amplifies the signal according to the gain determined by the potentiometer and sends the signal to the analog output of the module.
+
+The third part consists of a comparator that switches the digital output and the diode when the signal falls below a certain value.
+
+**Specification**
+
+| Operating Voltage          | 2v \~ 2.5v    |
+|----------------------------|---------------|
+| Working Current            | 10mA          |
+| Diameter                   | 5mm           |
+| Package Type               | Diffusion     |
+| Color                      | Red + Yellow  |
+| Beam Angle                 | 150           |
+| Wavelength                 | 571nm + 644nm |
+| Luminosity Intensity (MCD) | 20-40; 40-80  |
+
+ Hardware Overview
+
+The sound sensor is a small board that combines a microphone (50Hz-10kHz) and some processing circuitry to convert sound waves into electrical signals.
+
+This electrical signal is fed to on-board LM393 High Precision Comparator to digitize it and is made available at OUT pin.
+
+![IMG_256](media/4b5999c21dd83b06ca816d27415fa8de.jpeg)
+
+The module has a built-in potentiometer for sensitivity adjustment of the OUT signal.
+
+You can set a threshold by using a potentiometer; So that when the amplitude of the sound exceeds the threshold value, the module will output LOW otherwise HIGH.
+
+This setup is very useful when you want to trigger an action when certain threshold is reached. For example, when the amplitude of the sound crosses a threshold (when a knock is detected), you can activate a relay to control the light. You got the idea!
+
+Tip: Rotate the knob counterclockwise to increase sensitivity and clockwise to decrease it.
+
+![IMG_257](media/824c444c506bcd9a06fd2e946d297eb5.jpeg)
+
+Apart from this, the module has two LEDs. The Power LED will light up when the module is powered. The Status LED will light up when the digital output goes LOW.
+
+ Pinout
+
+![](media/3049a43b76cce18b8c2d6c8b579d6210.png)DOUT is the sound sensor digital pin which we connect to the Arduino.
+
+AOUT is the sound sensor analog pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+![](media/6e5ea895d1972ae9d0012802b025d8bd.png)
+
+![](media/aaf19888d7b2ade9b9142f56c32491e3.png)![](media/808efc9a92572d80fb77a3c526f51ac7.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 26
+
+sound
+
+By keyes
+
+\*/
+
+int led = 13; // define the LED pin
+
+int digitalPin = 3; // KY-030 digital interface
+
+int analogPin = A0; // KY-030 analog interface
+
+int digitalVal; // digital readings
+
+int analogVal; //analog readings
+
+void setup()
+
+{
+
+pinMode(led, OUTPUT);
+
+pinMode(digitalPin, INPUT);
+
+//pinMode(analogPin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+// Read the digital interface
+
+digitalVal = digitalRead(digitalPin);
+
+if(digitalVal == HIGH) // if temperature threshold reached
+
+{
+
+digitalWrite(led, HIGH); // turn ON Arduino's LED
+
+}
+
+else
+
+{
+
+digitalWrite(led, LOW); // turn OFF Arduino's LED
+
+}
+
+// Read the analog interface
+
+analogVal = analogRead(analogPin);
+
+Serial.println(analogVal); // print analog value to serial
+
+delay(100);
+
+}
+
+**Example Result**
+
+Done wiring and powered up, upload well the code, then open the serial monitor and set the baud rate as 9600, you will see the analog value. When talking toward the micro head, the value will increase. Shown below.
+
+![](media/a2895e046ca32fd164adeb7700865840.png)
+
+### **Project 27：Digital IR Receiver Module**
+
+![](media/501e7b6e850b46f6673b6fe2732e1ed9.png)
+
+**Description**
+
+![](media/e3072e28476494001a517d9da290eba7.png)The KY-022 Infrared Receiver module reacts to 38kHz IR light. It can be used to receive commands from IR remote controllers from TVs, stereos and other devices.
+
+It can also be used together with the [KY-005 IR Transmitter module](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/).
+
+IR is widely used in remote control. With this IR receiver, Arduino project is able to receive command from any IR remoter controllers if you have the right decoder. Well, it will be also easy to make your own IR controller using IR transmitter.
+
+**Specification**
+
+| Operating Voltage    | 2.7V to 5.5V   |
+|----------------------|----------------|
+| Operating Current    | 0.4mA to 1.5mA |
+| Reception Distance   | 18m            |
+| Reception Angle      | ±45º           |
+| Carrier Frequency    | 38KHz          |
+| Low Level Voltage    | 0.4V           |
+| High Level Voltage   | 4.5V           |
+| Ambient Light Filter | up to 500LUX   |
+
+**What Is Infrared?**
+
+Infrared radiation is a form of light similar to the light we see all around us. The only difference between IR light and visible light is the frequency and wavelength, meaning that infrared light lies outside the range of visible light, so it is inviable to the human eye. A good way of seeing Infrared light is to view it through an old camera, this is because they contain a filter which makes the IR light visible, usually seen as a purple glow.
+
+![IMG_256](media/7af21783ad7da58fd6407715d62ef29f.png)
+
+**IR Signal Modulation**
+
+IR light is all around us, emitted by the sun, light bulbs and anything else that produces heat. So it would be easy to assume that an IR Receiver would pick up all this extra IR radiation rather than the one being sent by a transmitter. To prevent this extra radiation from interfering with the IR signal, a signal modulation technique is used.
+
+In IR signal modulation, an encoder on the IR remote converts a binary signal into a modulated electrical signal. This electrical signal is sent to the transmitting LED. The transmitting LED converts the modulated electrical signal into a modulated IR light signal. The IR receiver then demodulates the IR light signal and converts it back to binary before passing on the information to a microcontroller as seen below in the diagram.
+
+![IMG_257](media/646dc5df108dd64a06290f608fb3ba32.png)
+
+A modulated IR signal is a series of light pulses switched on and off at a high frequency, this is known as the carrier frequency. The carrier frequency used by most transmitters is 38 kHz, because it is rare in nature and therefor can be distinguished from ambient IR noise. This way the IR receiver will know that the 38 kHz signal was sent from the transmitter and not picked up from the surrounding environment.
+
+ Pinout
+
+![](media/4facfbb2b8b032da47bd98e65b00a8e1.png)
+
+SIN is the IR receiver module signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the module power line (middle) and ground (-) to +5 and GND on the Arduino respectively. Also connect the signal pin (S) to pin 11.Line up the IR receiver and transmitter, place them facing each other.
+
+![](media/64d282c3bb0d3ab4821310ccda10c1bc.png)![Untitled Sketch_b1b](media/afc2451633daf77a707ce7726b88081b.png)
+
+![Untitled Sketch_b1b](media/ab04c8af1f9e10768ede2a5b4518700e.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 27-1
+
+Infrared Receiver
+
+By keyes
+
+\*/
+
+\##include "PinDefinitionsAndMore.h"
+
+\##include \<IRremote.hpp\>
+
+\##define DECODE_NEC
+
+void setup() {
+
+Serial.begin(115200);
+
+IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
+
+}
+
+void loop() {
+
+if (IrReceiver.decode()) {
+
+// Print a short summary of received data
+
+IrReceiver.printIRResultShort(&Serial);
+
+Serial.println();
+
+IrReceiver.resume(); // Enable receiving of the next value
+
+}
+
+}
+
+**Note:** before compiling the code, do remember to place the library into libraries directory of Arduino IDE. Otherwise, compiling will fail.
+
+IR Remote Library Includes some sample codes for sending and receiving.
+
+**Example Result**
+
+Finish the wiring and upload the code, and then send the infrared signal through the infrared remote controller, which is received and printed by the infrared receiver module.
+
+![](media/e9263a1ff3414bca5a17b33605cadf49.png)
+
+**Expand training**
+
+Use the infrared remote control to connect the led lamp
+
+**Connection Diagram**
+
+**![Untitled Sketch_bb](media/b739ce384e2a8e113a66d83858202431.jpeg)**
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 27-2
+
+Infrared Receiver
+
+By keyes
+
+\*/
+
+\##include "PinDefinitionsAndMore.h"
+
+\##include \<IRremote.hpp\>
+
+\##define DECODE_NEC
+
+int led = 9;
+
+int val = 0;
+
+void setup() {
+
+Serial.begin(115200);
+
+IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
+
+pinMode(led,OUTPUT);
+
+}
+
+void loop() {
+
+if (IrReceiver.decode()) {
+
+// Print a short summary of received data
+
+IrReceiver.printIRResultShort(&Serial);
+
+Serial.println();
+
+IrReceiver.resume(); // Enable receiving of the next value
+
+if (IrReceiver.decodedIRData.command == 0x40) {
+
+// do something
+
+val = \~val;
+
+digitalWrite(led,val);
+
+delay(150);
+
+}
+
+}
+
+}
+
+**Example Result**
+
+Press THE OK key and the LED turns on. Press the OK key again and the LED turns off
+
+**  
+**
+
+### **Project 28：Digital IR Transmitter Module**
+
+![IMG_256](media/be4f8a0a218bae34c2d24770d0dabb05.jpeg)
+
+**Description**
+
+![](media/e6086decf50e3fd91380e4c264996cd2.png)The KY-005 Infrared Transmitter module emits infrared light at 38kHz. It can be used to control TVs, stereos, air conditioners and other devices with IR receivers. It can also be used together with the KY-022 Infrared Receiver module.
+
+**Specification**
+
+| Power Supply               | 3-5V                  |
+|----------------------------|-----------------------|
+| Infrared center frequency  | 850nm-940nm           |
+| Infrared emission angle    | about 20 degrees      |
+| Infrared emission distance | about 1.3m (5V 38Khz) |
+| Interface socket           | PH2.54                |
+
+ **How Does It Work?**
+
+There are different types of infrared transmitters depending on their wavelengths, output power and response time. An IR sensor consists of an IR LED and an IR Photodiode, together they are called as PhotoCoupler or OptoCoupler.
+
+**IR Transmitter or IR LED**
+
+![IMG_256](media/3e12dd5028372f515fdb694aaf5ce036.jpeg)Infrared Transmitter is a light emitting diode (LED) which emits infrared radiations called as IR LED’s. Even though an IR LED looks like a normal LED, the radiation emitted by it is invisible to the human eye.
+
+The picture of an Infrared LED is shown below.
+
+**IR Receiver or Photodiode**
+
+![IMG_257](media/bfabd2f57f9dcc9bd9c89110c68d78ee.jpeg)Infrared receivers or infrared sensors detect the radiation from an IR transmitter. IR receivers come in the form of photodiodes and phototransistors. Infrared Photodiodes are different from normal photo diodes as they detect only infrared radiation. Below image shows the picture of an IR receiver or a photodiode,
+
+Different types of IR receivers exist based on the wavelength, voltage, package, etc. When used in an infrared transmitter – receiver combination, the wavelength of the receiver should match with that of the transmitter.
+
+The emitter is an IR LED and the detector is an IR photodiode. The IR photodiode is sensitive to the IR light emitted by an IR LED. The photo-diode’s resistance and output voltage change in proportion to the IR light received. This is the underlying working principle of the IR sensor.
+
+![IMG_258](media/2a0fe77df42e656140291182437469e4.png)
+
+When the IR transmitter emits radiation, it reaches the object and some of the radiation reflects back to the IR receiver. Based on the intensity of the reception by the IR receiver, the output of the [**sensor**](https://robu.in/product-category/sensor/) defines.
+
+ Pinout
+
+![](media/1baf3585be00ef0bfc945af1c4cd638f.png)
+
+SIN is the infrared transmitter module signal pin which we connect to the Arduino.
+
+VCC should be connected to the +5V Power of Arduino.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the board power line (middle) and ground (-) to +5 and GND on the Arduino respectively.Connect the signal pin (S) to pin 3 on the Arduino Uno.The pin number for the IR transmitter is determined by IRremote library. Other platforms might use a different pin.
+
+![](media/b74bdc893422135265cf1e77c39d73ff.png)
+
+![](media/d8b812360b75c72cd45a9d0dfdc5e838.png)![](media/e86e6884ae304c8736f3a951b87d95a4.png)
+
+The following Arduino sketch acts as a TV remote control. It uses the IRremote library to serially send instructions to a TV using infrared light.
+
+In this example, we will send the power command for Sony TVs every 5 seconds, turning the TV on and off 10 times.
+
+Check the IRremote library documentation for supported TV commands and devices. Links to the required libraries can be found in the Downloads section below.
+
+You can also use the [KY-022 IR Receiver](https://arduinomodules.info/ky-022-infrared-receiver-module/) module to receive and process the signal.
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 28
+
+Infrared Transmitter
+
+By keyes
+
+\*/
+
+\##include "PinDefinitionsAndMore.h"
+
+\##include \<IRremote.h\>
+
+void setup() {
+
+pinMode(LED_BUILTIN, OUTPUT);
+
+Serial.begin(115200);
+
+IrSender.begin(); // Start with IR_SEND_PIN as send pin and if NO_LED_FEEDBACK_CODE is NOT defined, enable feedback LED at default feedback LED pin
+
+}
+
+void loop() {
+
+IrSender.sendNECRaw(0x9D620102, 0);
+
+delay(1000); // delay must be greater than 5 ms (RECORD_GAP_MICROS), otherwise the receiver sees it as one long signal
+
+}
+
+**Result:**
+
+Connect the line, upload the code, and then connect the infrared receiving module with a fast sending board. Print the code of item 27 through the serial port to see the value sent by the infrared transmitting module
+
+![](media/f42a5f9682d9a5d10d4c5e76fdd9e930.png)
+
+**  
+**
+
+### **Project 29: 1602 LCD module**
+
+![IMG_256](media/22373e1a5458cd71c9d49c54a436f3fe.jpeg)
+
+**Description**
+
+![](media/97c4488170561a75f9dd3981cb56d65a.png)Want your Arduino projects to display status messages or sensor readings? Then these LCD displays might be the perfect fit. They are extremely common and a fast way to add a readable interface to your project.
+
+**Specification**
+
+| Power Supply    | 3.3-5V                               |
+|-----------------|--------------------------------------|
+| Display Mode    | STN, BLUB                            |
+| Display Formate | 16 Character x 2 Line                |
+| Input Data      | 4-Bits or 8-Bits interface available |
+| Display Font    | 5 x 8 Dots                           |
+| Driving Scheme  | 1/16Duty,1/5Bias                     |
+| BACKLIGHT       | blue                                 |
+
+ **How Does It Work?**
+
+These LCDs are ideal for displaying text/characters only, hence the name ‘Character LCD’. The display has an LED backlight and can display 32 ASCII characters in two rows with 16 characters on each row.
+
+![IMG_256](media/8b9b60b606d68679ce6a17e0df4ae54d.png)
+
+Each rectangle contains grid of 5×8 pixels
+
+If you look closely, you can actually see the little rectangles for each character on the display and the pixels that make up a character. Each of these rectangles is a grid of 5×8 pixels.
+
+Although they display only text, they do come in many sizes and colors: for example, 16×1, 16×4, 20×4, with white text on blue background, with black text on green and many more.
+
+The good news is that all of these displays are ‘swappable’ – if you build your project with one you can just unplug it and use another size/color LCD of your choice. Your code may have to adjust to the larger size but at least the wiring is the same!
+
+ Pinout
+
+ ![](media/3a8c6d721d72a26c9d54b5c2aba51055.png)
+
+GND should be connected to the ground of Arduino.
+
+VCC is the power supply for the LCD which we connect the 5 volts pin on the Arduino.
+
+Vo (LCD Contrast) controls the contrast and brightness of the LCD. Using a simple voltage divider with a potentiometer, we can make fine adjustments to the contrast.
+
+RS (Register Select) pin lets the Arduino tell the LCD whether it is sending commands or the data. Basically this pin is used to differentiate commands from the data.
+
+For example, when RS pin is set to LOW, then we are sending commands to the LCD (like set the cursor to a specific location, clear the display, scroll the display to the right and so on). And when RS pin is set on HIGH we are sending data/characters to the LCD.
+
+R/W (Read/Write) pin on the LCD is to control whether or not you’re reading data from the LCD or writing data to the LCD. Since we’re just using this LCD as an OUTPUT device, we’re going to tie this pin LOW. This forces it into the WRITE mode.
+
+En (Enable) pin is used to enable the display. Meaning, when this pin is set to LOW, the LCD does not care what is happening with R/W, RS, and the data bus lines; when this pin is set to HIGH, the LCD is processing the incoming data.
+
+D0-D7 (Data Bus) are the pins that carries the 8 bit data we send to the display. For example, if we want to see the uppercase ‘A’ character on the display we will set these pins to 0100 0001(according to the ASCII table) to the LCD.
+
+A-C (Anode & Cathode) pins are used to control the backlight of the LCD.
+
+**Connection Diagram**
+
+let’s connect the LCD Display to the Arduino. Four data pins (D4-D7) from the LCD will be connected to Arduino’s digital pins from \##4-7. The Enable pin on LCD will be connected to Arduino \##2 and the RS pin on LCD will be connected to Arduino \##1.
+
+![](media/6082a78ec1cd01e623901fa88ce34139.png)![Untitled Sketch_b12b](media/996b2dd5ba693b5b37e586f798a8f70e.png)![Untitled Sketch_b11b](media/9f1bf9708b89cb81679cfb04f9cbb015.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 29
+
+1602 LCD
+
+By keyes
+
+\*/
+
+// include the library code:
+
+\##include \<LiquidCrystal.h\>
+
+// Creates an LCD object. Parameters: (rs, enable, d4, d5, d6, d7)
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup()
+
+{
+
+// set up the LCD's number of columns and rows:
+
+lcd.begin(16, 2);
+
+// Clears the LCD screen
+
+lcd.clear();
+
+}
+
+void loop()
+
+{
+
+// Print a message to the LCD.
+
+lcd.print(" Hello world!");
+
+// set the cursor to column 0, line 1
+
+// (note: line 1 is the second row, since counting begins with 0):
+
+lcd.setCursor(0, 1);
+
+// Print a message to the LCD.
+
+lcd.print(" LCD Tutorial");
+
+}
+
+**Example Result**
+
+If everything goes right, you should see something like this on the display.
+
+![IMG_256](media/f8ca38f44d6a11d06262f1d93edc0d8d.jpeg)
+
+### **Project 30:DHT11 Sensor**
+
+![](media/2c757968d61641b1684e3aab51d470fb.png)
+
+**Description**
+
+![](media/a0150fc27cec190a2ad34b1e1ec0159f.png)Give your next Arduino project the ability to sense the world around it with the inexpensive DHT11 digital temperature & humidity sensor module from AOSONG.
+
+This sensor is pre-calibrated and don’t require extra components so you can start measuring relative humidity and temperature right away.
+
+**Specification**
+
+| Operating Voltage                  | 3.3V to 5.5V                |
+|------------------------------------|-----------------------------|
+| Humidity measurement range         | 20% to 90% RH               |
+| Humidity measurement accuracy      | ±5% RH                      |
+| Humidity measurement resolution    | 1% RH                       |
+| Temperature measurement range      | 0ºC to 50ºC [32ºF to 122ºF] |
+| Temperature measurement accuracy   | ±2ºC                        |
+| Temperature measurement resolution | 1ºC                         |
+| Signal transmission range          | 20m                         |
+
+ **How Does It Work?**
+
+Inside the DHT11, there is a humidity sensing component along with a Thermistor.
+
+![IMG_256](media/f80d1ed3279b692217b2dbbdafd27cf2.jpeg)Humidity sensing component has two electrodes with moisture holding substrate sandwiched between them.
+
+The ions are released by the substrate as water vapor is absorbed by it, which in turn increases the conductivity between the electrodes.
+
+The change in resistance between the two electrodes is proportional to the relative humidity. Higher relative humidity decreases the resistance between the electrodes, while lower relative humidity increases the resistance between the electrodes.
+
+![IMG_257](media/0c0c862cb60b82a8bdce8ff7e4a71d76.png)
+
+DHt11 also contains a NTC/Thermistor to measure temperature. A thermistor is a thermal resistor whose resistance changes drastically with temperature. The term “NTC” means “Negative Temperature Coefficient”, which means that the resistance decreases with increase of the temperature.
+
+![IMG_258](media/889784fe955d1f0bb4c51c6862f41cf4.png)
+
+On the other side, there is a small PCB with an 8-bit SOIC-14 packaged IC. This IC measures and processes the analog signal with stored calibration coefficients, does analog to digital conversion and spits out a digital signal with the temperature and humidity.
+
+![IMG_259](media/dfce90dc9ee230c2ca1d3b8f436102dd.jpeg)
+
+ Pinout
+
+![](media/048bee6825ca1cd75d6a69122facde85.png)
+
+\+ (VCC) pin supplies power for the sensor.
+
+SIN pin is used to communication between the sensor and the Arduino.
+
+– (GND) should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+Connect the Power line (middle) and ground (-) to +5 and GND respectively. Connect signal (S) to pin 8 on the Arduino.
+
+| **KY-015** | **Arduino** |
+|------------|-------------|
+| S          | Pin 8       |
+| middle     | +5V         |
+| –          | GND         |
+
+![](media/d517b5a41a11fe7a44bb38564e2837f1.png)
+
+![](media/dd2155f8a0e5dab58e71b26a3dc779fa.png)
+
+![](media/44669863abd617d18cefc3dae617d65b.png)
+
+ Installing DHT library
+
+DHT11 sensors have their own single wire protocol for transferring the data. This protocol requires precise timing. Fortunately, **DHT Library** was written to hide away all the complexities so that we can issue simple commands to read the temperature and humidity data.
+
+Download the library first, by visiting the [GitHub repo](https://github.com/RobTillaart/Arduino/tree/master/libraries/DHTlib) , download the zip:
+
+<https://github.com/RobTillaart/Arduino/tree/master/libraries/DHTlib>
+
+To install it, open the Arduino IDE, go to Sketch \> Include Library \> Add .ZIP Library, and then select the DHTlib ZIP file that you just downloaded.
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 30
+
+DHT11
+
+By keyes
+
+\*/
+
+\##include \<dht.h\>// Include library
+
+\##define outPin 8 // Defines pin number to which the sensor is connected
+
+dht DHT;// Creates a DHT object
+
+void setup() {
+
+Serial.begin(9600);
+
+}
+
+void loop() {
+
+int readData = DHT.read11(outPin);
+
+float t = DHT.temperature;// Read temperature
+
+float h = DHT.humidity;// Read humidity
+
+Serial.print("Temperature = ");
+
+Serial.print(t);
+
+Serial.print("°C \| ");
+
+Serial.print((t\*9.0)/5.0+32.0);// Convert celsius to fahrenheit
+
+Serial.println("°F ");
+
+Serial.print("Humidity = ");
+
+Serial.print(h);
+
+Serial.println("% ");
+
+Serial.println("");
+
+delay(2000); // wait two seconds
+
+}
+
+**Example Result**
+
+Once the sketch is uploaded, open a Serial Monitor window to see the output from the Arduino.
+
+![](media/7833252a2153b287d3bce04dc0dacf8f.png)
+
+### **Project 31: PIR Motion Sensor**
+
+![](media/9ef840f696f46f998d25cd16cbc079c2.png)
+
+**Description**
+
+![](media/fe9bfb7f56255437a4188b2e98ca13fc.png)Every mad scientist’s lab, or teenager’s secret room, needs advanced protection against intrusion by rogue agents or siblings. If you are one of them, you should probably consider getting a Passive infrared (PIR) sensor for you. PIR sensors allow you to detect when someone is in your room when they shouldn’t be.
+
+Though it may seem like something out of a spy movie, you likely use PIR sensors every day. This sensor is the same you will find in most modern security systems, automatic light switches, garage door openers and similar applications where the operation of some electrical device is necessary only in the presence of humans.
+
+**Specification**
+
+1.  Input Voltage: 3.3 \~ 5V, Maximum for 6V
+2.  Working Current: 15uA
+3.  Working Temperature: -20 \~ 85 ℃
+4.  Output Voltage: High 3V, Low 0V
+5.  Output Delay Time (High Level): About 2.3 to 3 Seconds
+6.  Detection Angle: 100 °
+7.  Detection Distance: 7 meters
+8.  Output Indicator LED (if output HIGH, it will be ON)
+9.  Limit Current for Pin: 100mA
+10. Size: 30\*20mm
+11. Weight: 4g
+
+ **How Does It Work?**
+
+If you didn’t know, all objects with a temperature above Absolute Zero (0 Kelvin / -273.15 °C) emit heat energy in the form of infrared radiation, including human bodies. The hotter an object is, the more radiation it emits.
+
+PIR sensor is specially designed to detect such levels of infrared radiation. It basically consists of two main parts: **A Pyroelectric Sensor** and A special lens called **Fresnel lens** which focuses the infrared signals onto the pyroelectric sensor.
+
+![IMG_256](media/e9a2c477e3fd704c353ccda1438592a3.png)
+
+A Pyroelectric Sensor actually has two rectangular slots in it made of a material that allows the infrared radiation to pass. Behind these, are two separate infrared sensor electrodes, one responsible for producing a positive output and the other a negative output. The reason for that is that we are looking for a change in IR levels and not ambient IR levels. The two electrodes are wired up so that they cancel each other out. If one half sees more or less IR radiation than the other, the output will swing high or low.
+
+**When the sensor is idle**, i.e. there is no movement around the sensor; both slots detect the same amount of infrared radiation, resulting in a zero output signal.
+
+**But when a warm body like a human or animal passes by**; it first intercepts one half of the PIR sensor, which causes a positive differential change between the two halves. When the warm body leaves the sensing area, the reverse happens, whereby the sensor generates a negative differential change. The corresponding pulse of signals results in the sensor setting its output pin high.
+
+![IMG_257](media/14f5ac4f941300ef5e4ddc191b9fa743.GIF)
+
+ HC-SR501 PIR Motion Detector
+
+For most of our Arduino projects that need to detect when a person has left or entered the area, or has approached, HC-SR501 PIR sensors are a great choice. They are low power and low cost, pretty rugged, have a wide lens range, easy to interface with and are insanely popular among hobbyists.
+
+HC-SR501 PIR sensor has three output pins VCC, Output and Ground as shown in the diagram below. It has a built-in voltage regulator so it can be powered by any DC voltage from 4.5 to 12 volts, typically 5V is used. Other than this, there are a couple options you have with your PIR. Let’s check them out.
+
+![IMG_258](media/4f09c4d004f172874fc8ff76699af6bf.png)
+
+There are two potentiometers on the board to adjust a couple of parameters:
+
+-   **Sensitivity**– This sets the maximum distance that motion can be detected. It ranges from 3 meters to approximately 7 meters. The topology of your room can affect the actual range you achieve.
+-   **Time**– This sets how long that the output will remain HIGH after detection. At minimum it is 3 seconds, at maximum it is 300 seconds or 5 minutes.
+
+Finally the board has a jumper (on some models the jumper is not soldered in). It has two settings:
+
+-   **H**– This is the Hold/Repeat/Retriggering In this position the HC-SR501 will continue to output a HIGH signal as long as it continues to detect movement.![IMG_259](media/f69b67af2d3d74e86857b6fe52a5bec8.png)
+-   **L**– This is the Intermittent or No-Repeat/Non-Retriggering In this position the output will stay HIGH for the period set by the TIME potentiometer adjustment.![IMG_260](media/784f6b216b3a060e070a54459aafb0ad.png)
+
+ Pinout
+
+![](media/bc7c59ab9f6e9773390edcdfa724ecaf.png)
+
+VCC is the power supply for HC-SR501 PIR sensor which we connect the 5V pin on the Arduino.
+
+SIN pin is a 3.3V TTL logic output. LOW indicates no motion is detected, HIGH means some motion has been detected.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+![](media/7f0b799ed3cbe34d573cd4eab7cc298f.png)![](media/03b1faf7303a2789548bb9bd7846ba99.png)
+
+![](media/5cac609372d7af3559959e2ab49f4971.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 31
+
+PIR sensor
+
+By keyes
+
+\*/
+
+int ledPin = 13; // choose the pin for the LED
+
+int inputPin = 8; // choose the input pin (for PIR sensor)
+
+int pirState = LOW; // we start, assuming no motion detected
+
+int val = 0; // variable for reading the pin status
+
+void setup() {
+
+pinMode(ledPin, OUTPUT); // declare LED as output
+
+pinMode(inputPin, INPUT); // declare sensor as input
+
+Serial.begin(9600);
+
+}
+
+void loop(){
+
+val = digitalRead(inputPin); // read input value
+
+if (val == HIGH) // check if the input is HIGH
+
+{
+
+digitalWrite(ledPin, HIGH); // turn LED ON
+
+if (pirState == LOW)
+
+{
+
+Serial.println("Motion detected!"); // print on output change
+
+pirState = HIGH;
+
+}
+
+}
+
+else
+
+{
+
+digitalWrite(ledPin, LOW); // turn LED OFF
+
+if (pirState == HIGH)
+
+{
+
+Serial.println("Motion ended!"); // print on output change
+
+pirState = LOW;
+
+}
+
+}
+
+}
+
+**Example Result**
+
+At the end we will print a message on the serial monitor when motion is detected.
+
+![IMG_256](media/7bf88ab748faefe0b1177149ac491f52.png)
+
+### **Project 32:Joystick Module**
+
+![IMG_256](media/20bbe793f89408412c5fb59a7a5f193d.jpeg)
+
+**Description**
+
+![](media/3bfb75998236111a55d9023a0dd78c17.png)When you hear the word **Joystick**, the first thing that comes to mind is the game controllers. They are mainly used for playing games, although in DIY Electronics, there are a lot of fun things you can do with it. Like controlling a robot/a rover, controlling the movement of camera; these are just the tip of the iceberg.
+
+**Specification**
+
+| Operating Voltage | 3.3V to 5V                      |
+|-------------------|---------------------------------|
+| Board Dimensions  | 2.6cm x 3.4cm [1.02in x 1.22in] |
+| Interface         | Analog x2, Digital x1           |
+|                   |                                 |
+
+ **How Does It Work?**
+
+The basic idea of a joystick is to translate the stick’s position on **two axes** — the **X-axis** (left to right) and the **Y-axis** (up and down) into electronic information an Arduino can process. This can be little tricky, but thanks to the design of the joystick consisting of two potentiometers and a **Gimbal Mechanism**.
+
+ Gimbal Mechanism
+
+![IMG_256](media/2b8a9b65a4f88e7d8c59fa48a7cacc01.GIF)
+
+When you rotate the joystick, the thumb handle moves a narrow rod that sits in two rotatable slotted shafts (Gimbal). One of the shafts allows motion in the X-axis (left and right) while the other allows motion in the Y-axis (up and down). Tilting the stick forward and backward pivots the Y-axis shaft from side to side. Tilting it left to right pivots the X-axis shaft. When you move the stick diagonally, it pivots both shafts.
+
+![IMG_257](media/18fb40def0f3ea221c0ebe3ce24882cd.png)
+
+A potentiometer is connected to each joystick shaft that interprets the position of the rod as analog readings. Moving the slotted shafts rotates the contact arm of the potentiometer. In other words, if you push the stick all the way forward, it will turn the potentiometer contact arm to one end of the track, and if you pull it back toward you, it will turn the contact arm the other way.
+
+ Reading analog values from Joystick
+
+In order to read the joystick’s physical position, we need to measure the change in resistance of a potentiometer. This change can be read by an Arduino analog pin using ADC.
+
+As the Arduino board has an ADC resolution of 10 bits, the values on each analog channel (axis) can vary from 0 to 1023. So, if the stick is moved on X axis from one end to the other, the X values will change from 0 to 1023 and similar thing happens when moved along the Y axis. When the joystick stays in its center position the value is around 512.
+
+The graphic below shows the X and Y directions and also gives an indication of how the outputs will respond when the joystick is pushed in various directions.
+
+![IMG_258](media/60fea8b7602eeb2bfd634eba0968694e.png)
+
+ Pinout
+
+![](media/a2bffb964229f5758ebd48a9782c625b.png)
+
+GND is the Ground Pin which we connect the GND pin on the Arduino.
+
+VCC supplies power for the module. You can connect it to 5V output from your Arduino.
+
+VRx gives readout of the joystick in the horizontal direction (X-coordinate) i.e. how far left and right the joystick is pushed.
+
+VRy gives readout of the joystick in the vertical direction (Y-coordinate) i.e. how far up and down the joystick is pushed.
+
+SW is the output from the pushbutton. It’s normally open, meaning the digital readout from the SW pin will be HIGH. When the button is pushed, it will connect to GND, giving output LOW.
+
+**Connection Diagram**
+
+Connect VRx to analog pin A0 of the Arduino and VRy to analog pin A1 of the Arduino.connect the SW pin of the joystick to digital pin D7 of the Arduino.
+
+![](media/89ae577069a0977d0d01ef5fda58d8b5.png)
+
+![](media/3c9c3ff009d4a59e90bf8ea9035b60c7.png)
+
+![](media/5076f361b1265b664dd4413dd135df5f.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 32
+
+Joystick
+
+By keyes
+
+\*/
+
+int value = 0;
+
+void setup() {
+
+//pinMode(A0, INPUT);
+
+//pinMode(A1, INPUT);
+
+pinMode(7, INPUT_PULLUP); //set pin 7 as an input and enable the internal pull-up resistor
+
+Serial.begin(9600);
+
+}
+
+void loop() {
+
+value = analogRead(A0); // read X axis value [0..1023]
+
+Serial.print("X:");
+
+Serial.print(value, DEC);
+
+value = analogRead(A1); // read Y axis value [0..1023]
+
+Serial.print(" \| Y:");
+
+Serial.print(value, DEC);
+
+value = digitalRead(7); // read Button state [0,1]
+
+Serial.print(" \| Button:");
+
+Serial.println(value, DEC);
+
+delay(100);
+
+}
+
+**Example Result**
+
+Wiring well and uploading the code, open the serial monitor on Arduino software, and set the baud rate as 9600, you will see the value shown below. If push the joystick downward /upward /leftward /rightward, the data will change.
+
+![IMG_256](media/dfe440d40baf943bf331c41bf1399260.png)
+
+### **Project 33:Rotary Encoder Module**
+
+![IMG_256](media/e169594085b058bee1b927c74f0a5337.jpeg)
+
+**Description**
+
+![](media/320ca7cf56aa52875241a8b7c28d842c.png)A rotary encoder is a type of position sensor that converts the angular position (rotation) of a knob into an output signal that is used to determine what direction the knob is being rotated.
+
+Due to their robustness and fine digital control; they are used in many applications including robotics, CNC machines and printers.
+
+There are two types of rotary encoder – absolute and incremental. The absolute encoder gives us the exact position of the knob in degrees while the incremental encoder reports how many increments the shaft has moved.
+
+The rotary encoder used in this tutorial is of an **incremental** type.
+
+**Specification**
+
+| Power Supply | 5V      |
+|--------------|---------|
+| Interface    | Digital |
+
+ **How Does It Work?**
+
+Inside the encoder is a slotted disk connected to the common ground pin C, and two contact pins A and B, as illustrated below.
+
+![IMG_256](media/2d0584d2a8219173eea49bb3ed9d9be9.png)
+
+When you turn the knob, A and B come in contact with the common ground pin C, in a particular order according to the direction in which you are turning the knob.
+
+When they come in contact with common ground they produce signals. These signals are shifted 90° out of phase with each other as one pin comes in contact before the other pin. This is called **quadrature encoding**.
+
+![IMG_257](media/2c4a469f962b7a973b368f88156a4878.GIF)
+
+When you turn the knob clockwise, the A pin connects first, followed by the B pin. When you turn the knob counterclockwise, the B pin connects first, followed by the A pin.
+
+By tracking when each pin connects to and disconnects from the ground, we can use these signal changes to determine in which direction the knob is being rotated. You can do this by simply observing the state of B when A changes state.
+
+When the A changes state:
+
+-   if B != A, then the knob was turned clockwise.
+
+![IMG_258](media/2f2075fa4b1402bf519e6e7956217b2f.png)
+
+if B = A, then the knob was turned counterclockwise.
+
+![IMG_259](media/38c8939bb25bae2938a4fb5b00f10b2a.png)
+
+ Pinout
+
+![](media/31e53eaf105423fb8b352d09111119fc.png)
+
+GND is the Ground connection.
+
+VCC is the positive supply voltage, usually 3.3 or 5 Volts.
+
+SW is the active low push button switch output. When the knob is pushed, the voltage goes LOW.
+
+DT (Output B) is the same as the CLK output, but it lags the CLK by a 90° phase shift. This output can be used to determine the direction of rotation.
+
+CLK (Output A) is the primary output pulse for determining the amount of rotation. Each time the knob is rotated by one detent (click) in either direction, the ‘CLK’ output goes through one cycle of going HIGH and then LOW.
+
+**Connection Diagram**
+
+connect the CLK and DT pins to digital pin\##2 and \##3 respectively. Finally, connect the SW pin to a digital pin \##4.
+
+![](media/06a9ceac8044c4b8a98f70440babe0b9.png)
+
+![](media/ef34396af12e0aaca3760bbf279dad82.png)
+
+![](media/e21cbcf566699a4437005d8a6d2176e2.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 33
+
+rotary encoder
+
+By keyes
+
+\*/
+
+\##define CLK 2
+
+\##define DT 3
+
+\##define SW 4
+
+int counter = 0;int currentStateCLK;int lastStateCLK;
+
+String currentDir ="";unsigned long lastButtonPress = 0;
+
+void setup() {
+
+// Set encoder pins as inputs
+
+pinMode(CLK,INPUT);
+
+pinMode(DT,INPUT);
+
+pinMode(SW, INPUT_PULLUP);
+
+// Setup Serial Monitor
+
+Serial.begin(9600);
+
+// Read the initial state of CLK
+
+lastStateCLK = digitalRead(CLK);
+
+}
+
+void loop() {
+
+// Read the current state of CLK
+
+currentStateCLK = digitalRead(CLK);
+
+// If last and current state of CLK are different, then pulse occurred
+
+// React to only 1 state change to avoid double count
+
+if (currentStateCLK != lastStateCLK && currentStateCLK == 1){
+
+// If the DT state is different than the CLK state then
+
+// the encoder is rotating CCW so decrement
+
+if (digitalRead(DT) != currentStateCLK) {
+
+counter --;
+
+currentDir ="CCW";
+
+} else {
+
+// Encoder is rotating CW so increment
+
+counter ++;
+
+currentDir ="CW";
+
+}
+
+Serial.print("Direction: ");
+
+Serial.print(currentDir);
+
+Serial.print(" \| Counter: ");
+
+Serial.println(counter);
+
+}
+
+// Remember last CLK state
+
+lastStateCLK = currentStateCLK;
+
+// Read the button state
+
+int btnState = digitalRead(SW);
+
+//If we detect LOW signal, button is pressed
+
+if (btnState == LOW) {
+
+//if 50ms have passed since last LOW pulse, it means that the
+
+//button has been pressed, released and pressed again
+
+if (millis() - lastButtonPress \> 50) {
+
+Serial.println("Button pressed!");
+
+}
+
+// Remember last button press event
+
+lastButtonPress = millis();
+
+}// Put in a slight delay to help debounce the reading
+
+delay(1);
+
+}
+
+**Example Result**
+
+If everything is fine, you should see below output on serial monitor.
+
+![IMG_256](media/91cbfa9257ad0f7c3291d6a36a2c8e1f.png)
+
+###**Project 34: 4x4 membrane keypad**
+
+![](media/f23eca4e92130cb71ac6f225352fcc6f.png)
+
+**Description**
+
+![](media/a2b642e118d2dd5565fde3a746aa5cb3.png)Membrane keypad is an application case of membrane switch with arrayed buttons. Membrane keypad is a kind of currently widespread operation system in the world that has the advantages of both practicality and beauty. It is composed of panel, upper circuit, isolation layer and bottom circuit. Due to these advantages: nice appearance, modern design, tiny in size, light weight, strong sealing (moisture proof, dust proof, oil pollution prevention, acid and alkali resistance), quake resistance and long service life, etc., it is commonly used in these fields, like medical instrument, computer control, digital machine tool, electronic weighing device, post and telecommunication, photocopier, refrigerator, microwave oven, electric fan, washing machine, electronic gaming machines.
+
+**Specification**
+
+| Rated Current          | 35V (DC), 100mA, 1W     |
+|------------------------|-------------------------|
+| Contact Resistance     | 10Ω\~500Ω               |
+| Insulation Resistance  | 100MΩ100V               |
+| Dielectric Strength    | 250VRms (50\~60Hz 1min) |
+| Electric Shock Shake   | \<5ms                   |
+| Longevity: touch type  | ≥ 1 million times       |
+| Working Voltage: touch | 170\~397g（6\~14oz）    |
+| Switching Path         | T-Touch: 0.6\~1.5mm     |
+| Working Temperature    | -40 \~ +80              |
+| Temperature            | 40,90％ \~ 95％, 240h   |
+| Vibration              | 20G, maximum            |
+
+ **How Does It Work?**
+
+The buttons on a keypad are arranged in rows and columns. a 4X4 keypad has 4 rows and 4 columns:
+
+![](media/a99467e61cd5a69332266638a105691d.png)
+
+Beneath each key is a membrane switch. Each switch in a row is connected to the other switches in the row by a conductive trace underneath the pad. Each switch in a column is connected the same way – one side of the switch is connected to all of the other switches in that column by a conductive trace. Each row and column is brought out to a single pin, for a total of 8 pins on a 4X4 keypad:
+
+![IMG_257](media/807f62125cbe21924939bb2244390336.jpeg)
+
+Pressing a button closes the switch between a column and a row trace, allowing current to flow between a column pin and a row pin.
+
+The schematic for a 4X4 keypad shows how the rows and columns are connected:
+
+![IMG_258](media/d08159dd982b5e4a182d0defec50f00c.png)
+
+The Arduino detects which button is pressed by detecting the row and column pin that’s connected to the button.
+
+This happens in four steps:
+
+1\. First, when no buttons are pressed, all of the column pins are held HIGH, and all of the row pins are held LOW:
+
+![IMG_259](media/07f7b605a50ae70041df2bf76ccfaf3f.png)
+
+2\. When a button is pressed, the column pin is pulled LOW since the current from the HIGH column flows to the LOW row pin:
+
+![IMG_260](media/2e243c99d5b8d57ff9933347ef6915e0.png)
+
+3\. The Arduino now knows which column the button is in, so now it just needs to find the row the button is in. It does this by switching each one of the row pins HIGH, and at the same time reading all of the column pins to detect which column pin returns to HIGH:
+
+![IMG_261](media/fd75ceb4c93bf0bc2a3d331cff52c1cd.png)
+
+4\. When the column pin goes HIGH again, the Arduino has found the row pin that is connected to the button:
+
+![IMG_262](media/cd7573dd3d886e279fba9299453047d7.png)
+
+From the diagram above, you can see that the combination of row 2 and column 2 could only mean that the number 5 button was pressed.
+
+ Pinout
+
+![](media/b03c5adc81a9081e4a87ab03c29d5812.png)
+
+**Connection Diagram**
+
+![](media/8a3ad871d787271a2c415e946a01b945.png)
+
+![](media/16edf9a5b7541e7da5c97328a7ba1aac.png)![](media/c0fae2976b2da440c04bf9f14211383b.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 34
+
+Membrane keypad
+
+By keyes
+
+\*/
+
+\##include \<Keypad.h\>
+
+const byte ROWS = 4;
+
+const byte COLS = 4;
+
+char hexaKeys[ROWS][COLS] = {
+
+{‘1’, ‘2’, ‘3’, ‘A’},
+
+{‘4’, ‘5’, ‘6’, ‘B’},
+
+{‘7’, ‘8’, ‘9’, ‘C’},
+
+{‘\*’, ‘0’, ‘\##’, ‘D’}
+
+};
+
+byte rowPins[ROWS] = {9, 8, 7, 6};
+
+byte colPins[COLS] = {5, 4, 3, 2};
+
+Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
+
+void setup(){
+
+Serial.begin(9600);
+
+}
+
+void loop(){
+
+char customKey = customKeypad.getKey();
+
+if (customKey){
+
+Serial.println(customKey);
+
+}
+
+}
+
+**If you’re using a 3X4 keypad, you can use this code:**
+
+\##include \<Keypad.h\>
+
+const byte ROWS = 4;
+
+const byte COLS = 3;
+
+char hexaKeys[ROWS][COLS] = {
+
+{‘1’, ‘2’, ‘3’},
+
+{‘4’, ‘5’, ‘6’},
+
+{‘7’, ‘8’, ‘9’},
+
+{‘\*’, ‘0’, ‘\##’}
+
+};
+
+byte rowPins[ROWS] = {9, 8, 7, 6};
+
+byte colPins[COLS] = {5, 4, 3};
+
+Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
+
+void setup(){
+
+Serial.begin(9600);
+
+}
+
+void loop(){
+
+char customKey = customKeypad.getKey();
+
+if (customKey){
+
+Serial.println(customKey);
+
+}
+
+}
+
+char hexaKeys[ROWS][COLS] = {
+
+{‘A’, ‘1’, ‘2’, ‘3’},
+
+{‘B’, ‘4’, ‘5’, ‘6’},
+
+{‘C’, ‘7’, ‘8’, ‘9’},
+
+{‘D’, ‘\*’, ‘0’, ‘\##’}
+
+};
+
+**Example Result**
+
+After you upload the code, open the serial monitor. When you press a key, the value will be printed out:
+
+![](media/37d1fab281034cff3d8368e96e6a9463.png)
+
+### **Project 35: HC-SR04 Ultrasonic Sensor**
+
+![IMG_256](media/99cd3769283989d51dccb1ebf97e48fc.jpeg)
+
+**Description**
+
+![](media/e2718675213988aadff257507dfdcfe9.png)Give your next Arduino project bat-powers with a HC-SR04 Ultrasonic Distance Sensor that can report the range of objects up to 13 feet away. Which is really good information to have if you’re trying to avoid your robot driving into a wall! They are low power (suitable for battery powered devices), inexpensive, easy to interface with and are insanely popular among hobbyists. And as a bonus it even looks cool, like a pair of Wall-E Robot eyes for your latest robotic invention!
+
+**What is Ultrasound?**
+
+Ultrasound is high-pitched sound waves with frequencies higher than the audible limit of human hearing.
+
+![IMG_256](media/ba104f24fe2132c37c84169a8b328411.png)
+
+Human ears can hear sound waves that vibrate in the range from about 20 times a second (a deep rumbling noise) to about 20,000 times a second (a high-pitched whistling). However, ultrasound has a frequency of over 20,000 Hz and is therefore inaudible to humans.
+
+ Hardware Overview
+
+At its core, the HC-SR04 Ultrasonic distance sensor consists of two ultrasonic transducers. The one acts as a transmitter which converts electrical signal into 40 KHz ultrasonic sound pulses. The receiver listens for the transmitted pulses. If it receives them it produces an output pulse whose width can be used to determine the distance the pulse travelled. As simple as pie!
+
+The sensor is small, easy to use in any robotics project and offers excellent non-contact range detection between 2 cm to 400 cm (that’s about an inch to 13 feet) with an accuracy of 3mm. Since it operates on 5 volts, it can be hooked directly to an Arduino or any other 5V logic microcontrollers.
+
+**Specification**
+
+| Operating Voltage    | DC 5V          |
+|----------------------|----------------|
+| Operating Current    | 15mA           |
+| Operating Frequency  | 40KHz          |
+| Max Range            | 4m             |
+| Min Range            | 2cm            |
+| Ranging Accuracy     | 3mm            |
+| Measuring Angle      | 15 degree      |
+| Trigger Input Signal | 10µS TTL pulse |
+| Dimension            | 45 x 20 x 15mm |
+
+ **How Does It Work?**
+
+It all starts, when a pulse of at least 10 µS (10 microseconds) in duration is applied to the Trigger pin. In response to that the sensor transmits a sonic burst of eight pulses at 40 KHz. This 8-pulse pattern makes the “ultrasonic signature” from the device unique, allowing the receiver to differentiate the transmitted pattern from the ambient ultrasonic noise.
+
+The eight ultrasonic pulses travel through the air away from the transmitter. Meanwhile the Echo pin goes HIGH to start forming the beginning of the echo-back signal.
+
+In case, If those pulses are not reflected back then the Echo signal will timeout after 38 mS (38 milliseconds) and return low. Thus a 38 mS pulse indicates no obstruction within the range of the sensor.
+
+![IMG_258](media/90d822fac4a058c28775e90ce42c7341.GIF)
+
+If those pulses are reflected back the Echo pin goes low as soon as the signal is received. This produces a pulse whose width varies between 150 µS to 25 mS, depending upon the time it took for the signal to be received.
+
+![IMG_259](media/93f97e0e8bb5b3b35841f8e2b55cf5be.GIF)
+
+The width of the received pulse is then used to calculate the distance to the reflected object. This can be worked out using simple distance-speed-time equation, we learned in High school. In case you forgot, an easy way to remember the distance, speed and time equations is to put the letters into a triangle.
+
+![IMG_260](media/6fe1c19b0ed28bcec26818ce14dceab5.png)
+
+Let’s take an example to make it more clear. Suppose we have an object in front of the sensor at an unknown distance and we received a pulse of width 500 µS on the Echo pin. Now let’s calculate how far the object from the sensor is. We will use the below equation.
+
+Distance = Speed x Time
+
+Here, we have the value of Time i.e. 500 µs and we know the speed. What speed do we have? The speed of sound, of course! Its 340 m/s. We have to convert the speed of sound into cm/µs in order to calculate the distance. A quick Google search for “speed of sound in centimeters per microsecond” will say that it is 0.034 cm/µs. You could do the math, but searching it is easier. Anyway, with that information, we can calculate the distance!
+
+Distance = 0.034 cm/µs x 500 µs
+
+But this is not done! Remember that the pulse indicates the time it took for the signal to be sent out and reflected back so to get the distance so, you’ll need to divide your result in half.
+
+Distance = (0.034 cm/µs x 500 µs) / 2
+
+Distance = 8.5 cm
+
+So, now we know that the object is **8.5 centimeters** away from the sensor.
+
+ Pinout
+
+![](media/2c139d919213a2a586358c22c2f7d1b2.png)
+
+VCC is the power supply for HC-SR04 Ultrasonic distance sensor which we connect the 5V pin on the Arduino.
+
+Trig pin is used to trigger the ultrasonic sound pulses.
+
+Echo pin produces a pulse when the reflected signal is received. The length of the pulse is proportional to the time it took for the transmitted signal to be detected.
+
+GND should be connected to the ground of Arduino.
+
+**Connection Diagram**
+
+![](media/d6ec98f4577d58215ccc7eb670739fd6.png)
+
+![](media/e17c40df94be5791782132e6c95d488f.png)![](media/2cc1f5d7479043ae5e5b29fd03319625.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 35
+
+Ultrasonic sensor
+
+By keyes
+
+\*/
+
+const int trigPin = 9;
+
+const int echoPin = 10;// defines pins numbers
+
+long duration;
+
+int distance;// defines variables
+
+void setup() {
+
+pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+
+pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+
+Serial.begin(9600); // Starts the serial communication
+
+}
+
+void loop() {
+
+// Clears the trigPin
+
+digitalWrite(trigPin, LOW);
+
+delayMicroseconds(2);
+
+// Sets the trigPin on HIGH state for 10 micro seconds
+
+digitalWrite(trigPin, HIGH);
+
+delayMicroseconds(10);
+
+digitalWrite(trigPin, LOW);
+
+// Reads the echoPin, returns the sound wave travel time in microseconds
+
+duration = pulseIn(echoPin, HIGH);
+
+// Calculating the distance
+
+distance = duration \* 0.034 / 2;
+
+// Prints the distance on the Serial Monitor
+
+Serial.print("Distance: ");
+
+Serial.println(distance);
+
+}
+
+**Example Result**
+
+After upload well the code to board, then open the serial monitor. When place an object in front of the ultrasonic sensor (from near and far), it will detect the distance of object. The value will be displayed on the monitor shown below.
+
+![IMG_256](media/e0d8aadcf782260f958a3b90a1a3e122.png)
+
+### **Project 36: MMA8452Q Digital Acceleration Sensor**
+
+![](media/510a7ed4c8cecb9ffa826b0ad2f70ce0.png)
+
+**Description**
+
+![IMG_256](media/f9224fc884327ae433f1c713599da46a.jpeg)MMA8452Q is a smart low-power, three-axis, capacitive micromachine acceleration sensor with 12-bit resolution.
+
+This acceleration sensor has a rich embedded performance, featured with flexible user programmable options and two interruption pins configuration.
+
+The embedded interruption function can save the overall power consumption and remove the burden of constantly polling the data in the main processor.
+
+Besides, MMA8452Q has a user optional range of ±2g / ±4g/ ±8g, which can output high-pass filtering data and non-filtered data in real time.
+
+This device can configure an embedded function to generate an inertial wake-up interrupt signal, which enables MMA8452Q to maintain a low-power mode in the static state while monitoring the event.
+
+**Specification**
+
+-   Power Supply Voltage：1.95 V to 3.6 V
+-   Interface Voltage：1.6 V to 3.6 V
+-   ±2g/±4g/±8g Optional dynamic range
+-   Output data rate (ODR) range：1.56 Hz to 800 Hz
+-   Noise：99μg/√Hz
+-   12 bits and 8 bits digital outputs;
+-   I2C digital output interface (up to 2.25 MHz when the pull-up resistor is 4.7 kΩ);
+-   Two programmable interruption pins applied to six interruption sources;
+-   Three motion detection embedded channels: free fall detection, pulse detection, shaking detection;
+-   Direction (transverse/longitudinal) detection with setting lag compensation;
+-   Automatic arousal and auto-dormant ODR can be automatically altered;
+-   High-pass filtering data can be exported in real time;
+-   Power consumption：6μA – 165μA
+
+ **How Does It Work?**
+
+The principle of operation of an accelerometer isn’t overly complicated. It measures the acceleration force in unit (g) and take measurements in one, two or three planes. Currently, the most commonly used accelerometers are 3-axis accelerometers, which are designed as a system of three separate accelerometers, each of whom measures acceleration in a different direction - in X, Y and Z planes.
+
+If the acceleration in any plane works in the opposite direction to that in which the sensor is directed, the accelerometer will measure the acceleration with a negative value. Otherwise, the acceleration will be measured with a positive value.
+
+![IMG_256](media/08c0b1bbf9352182293577ed71a51437.png)
+
+If no external acceleration is applied to the accelerometer, the device will measure only the standard acceleration of free fall, i.e. the force of gravity. Assuming that a 3-axis accelerometer is positioned so that the X-axis sensor points left, the Y-axis sensor points downwards, and the Z-axis sensor is directed forward, with no forces applied to the device, the accelerometer will show the following: X = 0 g, Y = 1 g, Z = 0 g. If the same accelerometer is tilted to the left, it’ll show these values: X = 1 g, Y = 0 g, Z = 0 g. Similarly, if the device is tilted to the right, the X-axis will show X = -1 g. Such dependencies in acceleration measurement are used by the algorithms of accelerator control systems.
+
+ Pinout
+
+![](media/5058343bd5a43d99cf9fa9fba567ba0f.png)VCC_IN is the power supply for the module. Connect it to the 5V output of the Arduino.
+
+3.3V is the power supply for the module. Connect it to the 3.3V output of the Arduino.
+
+GND should be connected to the ground of Arduino.
+
+SCL is a I2C Clock pin. This is a timing signal supplied by the Bus Master device. Connect to the SCL pin on the Arduino.
+
+SDA is a I2C Data pin. This line is used for both transmit and receive. Connect to the SDA pin on the Arduino.
+
+**ConnectionDiagram**![](media/cd365580fbc987e27aec9e086565e341.png)
+
+![](media/29f250c8d4b111ade75b386f50626beb.png)
+
+![](media/4172865f17076352be62db748ea8ff61.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 36
+
+MMA8452Q
+
+By keyes
+
+\*/
+
+\##include \<Wire.h\> // Used for I2C
+
+// The SparkFun breakout board defaults to 1, set to 0 if SA0 jumper on the bottom of the board is set
+
+\##define MMA8452_ADDRESS 0x1C // 0x1D if SA0 is high, 0x1C if low
+
+//Define a few of the registers that we will be accessing on the MMA8452
+
+\##define OUT_X_MSB 0x01
+
+\##define XYZ_DATA_CFG 0x0E
+
+\##define WHO_AM_I 0x0D
+
+\##define CTRL_REG1 0x2A
+
+\##define GSCALE 2 // Sets full-scale range to +/-2, 4, or 8g. Used to calc real g values.
+
+void setup()
+
+{
+
+Serial.begin(9600);
+
+Serial.println("MMA8452 Basic Example");
+
+Wire.begin(); //Join the bus as a master
+
+initMMA8452(); //Test and intialize the MMA8452
+
+}
+
+void loop()
+
+{
+
+int accelCount[3]; // Stores the 12-bit signed value
+
+readAccelData(accelCount); // Read the x/y/z adc values
+
+// Now we'll calculate the accleration value into actual g's
+
+float accelG[3]; // Stores the real accel value in g's
+
+for (int i = 0 ; i \< 3 ; i++)
+
+{
+
+accelG[i] = (float) accelCount[i] / ((1\<\<12)/(2\*GSCALE)); // get actual g value, this depends on scale being set
+
+}
+
+// Print out values
+
+for (int i = 0 ; i \< 3 ; i++)
+
+{
+
+Serial.print(accelG[i], 4); // Print g values
+
+Serial.print("\\t"); // tabs in between axes
+
+}
+
+Serial.println();
+
+delay(10); // Delay here for visibility
+
+}
+
+void readAccelData(int \*destination)
+
+{
+
+byte rawData[6]; // x/y/z accel register data stored here
+
+readRegisters(OUT_X_MSB, 6, rawData); // Read the six raw data registers into data array
+
+// Loop to calculate 12-bit ADC and g value for each axis
+
+for(int i = 0; i \< 3 ; i++)
+
+{
+
+int gCount = (rawData[i\*2] \<\< 8) \| rawData[(i\*2)+1]; //Combine the two 8 bit registers into one 12-bit number
+
+gCount \>\>= 4; //The registers are left align, here we right align the 12-bit integer
+
+// If the number is negative, we have to make it so manually (no 12-bit data type)
+
+if (rawData[i\*2] \> 0x7F)
+
+{
+
+gCount = \~gCount + 1;
+
+gCount \*= -1; // Transform into negative 2's complement \##
+
+}
+
+destination[i] = gCount; //Record this gCount into the 3 int array
+
+}
+
+}
+
+// Initialize the MMA8452 registers
+
+// See the many application notes for more info on setting all of these registers:
+
+// http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8452Q
+
+void initMMA8452()
+
+{
+
+byte c = readRegister(WHO_AM_I); // Read WHO_AM_I register
+
+if (c == 0x2A) // WHO_AM_I should always be 0x2A
+
+{
+
+Serial.println("MMA8452Q is online...");
+
+}
+
+else
+
+{
+
+Serial.print("Could not connect to MMA8452Q: 0x");
+
+Serial.println(c, HEX);
+
+while(1) ; // Loop forever if communication doesn't happen
+
+}
+
+MMA8452Standby(); // Must be in standby to change registers
+
+// Set up the full scale range to 2, 4, or 8g.
+
+byte fsr = GSCALE;
+
+if(fsr \> 8) fsr = 8; //Easy error check
+
+fsr \>\>= 2; // Neat trick, see page 22. 00 = 2G, 01 = 4A, 10 = 8G
+
+writeRegister(XYZ_DATA_CFG, fsr);
+
+//The default data rate is 800Hz and we don't modify it in this example code
+
+MMA8452Active(); // Set to active to start reading
+
+}
+
+// Sets the MMA8452 to standby mode. It must be in standby to change most register settings
+
+void MMA8452Standby()
+
+{
+
+byte c = readRegister(CTRL_REG1);
+
+writeRegister(CTRL_REG1, c & \~(0x01)); //Clear the active bit to go into standby
+
+}
+
+// Sets the MMA8452 to active mode. Needs to be in this mode to output data
+
+void MMA8452Active()
+
+{
+
+byte c = readRegister(CTRL_REG1);
+
+writeRegister(CTRL_REG1, c \| 0x01); //Set the active bit to begin detection
+
+}
+
+// Read bytesToRead sequentially, starting at addressToRead into the dest byte array
+
+void readRegisters(byte addressToRead, int bytesToRead, byte \* dest)
+
+{
+
+Wire.beginTransmission(MMA8452_ADDRESS);
+
+Wire.write(addressToRead);
+
+Wire.endTransmission(false); //endTransmission but keep the connection active
+
+Wire.requestFrom(MMA8452_ADDRESS, bytesToRead); //Ask for bytes, once done, bus is released by default
+
+while(Wire.available() \< bytesToRead); //Hang out until we get the \## of bytes we expect
+
+for(int x = 0 ; x \< bytesToRead ; x++)
+
+dest[x] = Wire.read();
+
+}
+
+// Read a single byte from addressToRead and return it as a byte
+
+byte readRegister(byte addressToRead)
+
+{
+
+Wire.beginTransmission(MMA8452_ADDRESS);
+
+Wire.write(addressToRead);
+
+Wire.endTransmission(false); //endTransmission but keep the connection active
+
+Wire.requestFrom(MMA8452_ADDRESS, 1); //Ask for 1 byte, once done, bus is released by default
+
+while(!Wire.available()) ; //Wait for the data to come back
+
+return Wire.read(); //Return this one byte
+
+}
+
+// Writes a single byte (dataToWrite) into addressToWrite
+
+void writeRegister(byte addressToWrite, byte dataToWrite)
+
+{
+
+Wire.beginTransmission(MMA8452_ADDRESS);
+
+Wire.write(addressToWrite);
+
+Wire.write(dataToWrite);
+
+Wire.endTransmission(); //Stop transmitting
+
+}
+
+**Example Result**
+
+Wiring as the above diagram and burning the code, after powered-on,then turn on the serial monitor to display the triaxial acceleration of sensor and its status, as the graph shown below.
+
+![](media/0176a2481f3647030437d95f27c0e893.png)
+
+### **Project 37: DS1307 Clock Module**
+
+![IMG_256](media/725d8e1393fb855e6e08eca291e89fa6.jpeg)
+
+**Description**
+
+![](media/ef1add6166c4baebc3bdfd1350397f2c.png)We all know that most MCUs we use for our projects are time-agnostic; simply put they are unaware of the time around them. It’s OK for most of our projects but once in a while when you come across an idea where keeping time is a prime concern, DS1307 RTC module is a savior. It’s perfect for projects containing data-logging, clock-building, time stamping, timers and alarms.
+
+ DS1307 RTC chip
+
+At the heart of the module is a low-cost, quite accurate RTC chip from Maxim – **DS1307**. It manages all timekeeping functions and features a simple two-wire I2C interface which can be easily interfaced with any microcontroller of your choice.
+
+![IMG_256](media/26c75e1ee713ba7169e3ab359c4063e3.jpeg)
+
+The chip maintains seconds, minutes, hours, day, date, month, and year information. The date at the end of the month is automatically adjusted for months with fewer than 31 days, including corrections for leap year (valid up to 2100). The clock operates in either the 24-hour or 12-hour format with an AM/PM indicator.
+
+The other cool feature of this board comes with SQW pin, which outputs one of four square-wave frequencies 1Hz, 4kHz, 8kHz or 32kHz and can be enabled programmatically.
+
+DS1307 come with an external 32kHz crystal for time-keeping. The problem with these crystals is that external temperature can affect their oscillation frequency. This change in frequency is negligible but it surely adds up.
+
+This may sound like a problem, but it’s not. It actually results with the clock being off by around five or so minutes per month.
+
+ Battery Backup
+
+The DS1307 incorporates a battery input, and maintains accurate timekeeping when main power to the device is interrupted.
+
+The built-in power-sense circuit continuously monitors the status of VCC to detect power failures and automatically switches to the backup supply. So, you need not worry about power outages, your MCU can still keep track of time.
+
+![IMG_257](media/636385cc6992605b392f67a534a20bd4.jpeg)
+
+The bottom side of the board holds a battery holder for 20mm 3V lithium coincells. Any CR2032 battery can fit well.
+
+Assuming a fully charged CR2032 battery with capacity 47mAh is used and chip consumes its minimum 300nA, the battey can keep the RTC running for a minimum of 17.87 years without an external 5V power supply.
+
+**47mAh/300nA = 156666.67 hours = 6527.78 days = 17.87 years**
+
+ Onboard 24C32 EEPROM
+
+DS1307 RTC module also comes with a 32 bytes 24C32 EEPROM chip from Atmel having limited read-write cycles. It can be used to save settings or really anything.
+
+![IMG_258](media/c100524cfcb253a750099e8e9deb4b0f.jpeg)
+
+The 24C32 EEPROM uses I2C interface for communication and shares the same I2C bus as DS1307.
+
+The onboard 24C32 EEPROM has a hardwired I2C address and is set to 0x50HEX
+
+ Pinout
+
+![](media/4c4075197445cbe731102dbbc8c3b979.png)
+
+SQ pin outputs one of four square-wave frequencies 1Hz, 4kHz, 8kHz or 32kHz and can be enabled programmatically.
+
+DS pin is supposed output temperature readings if your module has a DS18B20 temperature sensor installed right next to the battery holder(labled as U1).
+
+SCL is the clock input for the I2C interface and is used to synchronize data movement on the serial interface.
+
+SDA is the data input/output for the I2C serial interface.
+
+VCC pin supplies power for the module. It can be anywhere between 3.3V to 5.5V.
+
+GND is a ground pin.
+
+BAT is a backup supply input for any standard 3V lithium cell or other energy source to maintain accurate timekeeping when main power to the device is interrupted.
+
+**Connection Diagram**
+
+connecting VCC pin to the 5V output on the Arduino and connect GND to ground.
+
+On the UNO board, the SDA (data line) and SCL (clock line) are on the pin headers close to the AREF pin. They are also known as A5 (SCL) and A4 (SDA).
+
+If you have a Mega board , the pins are different! You’ll want to use digital 21 (SCL) and 20 (SDA). Refer below table for quick understanding.
+
+![](media/b278dfabcf11f787b22c68531b1a107a.png)
+
+![](media/e402fc23aad48ecd750872d5f9d17b74.png)
+
+![](media/391cb33ee1a5df107caf300f46f72742.png)
+
+**Sample Code**
+
+/\*
+
+Keyes 37 in 1 Sensor Kit Upgraded Version
+
+Project 37
+
+DS1307 clock
+
+By keyes
+
+\*/
+
+// Date and time functions using a DS1307 RTC connected via I2C and Wire lib
+
+\##include "RTClib.h"
+
+RTC_DS1307 rtc;
+
+char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+void setup () {
+
+Serial.begin(57600);
+
+\##ifndef ESP8266
+
+while (!Serial); // wait for serial port to connect. Needed for native USB
+
+\##endif
+
+if (! rtc.begin()) {
+
+Serial.println("Couldn't find RTC");
+
+Serial.flush();
+
+abort();
+
+}
+
+if (! rtc.isrunning()) {
+
+Serial.println("RTC is NOT running, let's set the time!");
+
+// When time needs to be set on a new device, or after a power loss, the
+
+// following line sets the RTC to the date & time this sketch was compiled
+
+rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+
+// This line sets the RTC with an explicit date & time, for example to set
+
+// January 21, 2014 at 3am you would call:
+
+// rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
+
+}
+
+// When time needs to be re-set on a previously configured device, the
+
+// following line sets the RTC to the date & time this sketch was compiled
+
+// rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+
+// This line sets the RTC with an explicit date & time, for example to set
+
+// January 21, 2014 at 3am you would call:
+
+// rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
+
+}
+
+void loop () {
+
+DateTime now = rtc.now();
+
+Serial.print(now.year(), DEC);
+
+Serial.print('/');
+
+Serial.print(now.month(), DEC);
+
+Serial.print('/');
+
+Serial.print(now.day(), DEC);
+
+Serial.print(" (");
+
+Serial.print(daysOfTheWeek[now.dayOfTheWeek()]);
+
+Serial.print(") ");
+
+Serial.print(now.hour(), DEC);
+
+Serial.print(':');
+
+Serial.print(now.minute(), DEC);
+
+Serial.print(':');
+
+Serial.print(now.second(), DEC);
+
+Serial.println();
+
+delay(1000);
+
+}
+
+**Example Result**
+
+Here’s how the output looks like in the serial monitor.
+
+![](media/428296e5bc26eb0b5f1b1cf41e232a75.png)

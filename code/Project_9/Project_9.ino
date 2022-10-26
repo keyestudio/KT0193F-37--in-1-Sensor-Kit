@@ -1,0 +1,26 @@
+/*
+Keyes 37 in 1 Sensor Kit Upgraded Version
+Project 9
+Button
+By keyes 
+*/
+int led = 13; //Define the LED pin
+int buttonpin = 3; //Define the push button pin
+int val; //Define a numeric variable
+void setup()
+{
+  pinMode(led,OUTPUT);
+  pinMode(buttonpin,INPUT);
+}
+void loop()
+{
+  val = digitalRead(buttonpin); // check the state of the button
+  if(val==HIGH) // if button is pressed, turn LED on
+  {
+    digitalWrite(led,HIGH);
+  }
+  else
+  {
+    digitalWrite(led,LOW);
+  }
+}
