@@ -1,5 +1,3 @@
-
-
 .. note::
     Documents are available in multiple languages.
         * |English|
@@ -41,11 +39,11 @@
 
 
 
+
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 3
    :caption: KT0193F 37 in 1 Sensor Kit for Arduino
-
-
+   
    docs/00_Introduction
    docs/projects
 
