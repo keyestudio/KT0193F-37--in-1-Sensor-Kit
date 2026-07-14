@@ -1,6 +1,3 @@
-# KT0193F 37 in 1 Sensor Kit for Arduino
-
-# KT0193F 37 in 1 Sensor Kit for Arduino
 ## 1.Description
 
 ![image1](media/KT0193F.png)
