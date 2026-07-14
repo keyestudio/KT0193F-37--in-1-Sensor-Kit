@@ -92,12 +92,6 @@ Schritt 2: Öffnen Sie es, um den Bibliotheksordner zu finden; dieser Ordner ent
 
 Schritt 3: Suchen Sie als Nächstes den Ordner [„libraries“](./libraries.7z), Sie müssen ihn nur kopieren und in den Bibliotheksordner der Arduino IDE einfügen.
 
-![image53](media/070a54e428caee6c2361a39d6be4b82f.png)
-
-![image54](media/da0e7c94005a4e3fdc9ca806116c5830.png)
-
-![image55](media/695eab52a0f8f1868e3f25629f7f055a.png)
-
 Kopieren Sie dann die oben genannten Bibliotheken in die Arduino-Bibliotheken, wie unten gezeigt:
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
