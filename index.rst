@@ -4,7 +4,9 @@
    :caption: KT0193F 37 in1 sensor kit for Arduino
 
 
-   KT0193F
+   docs/00_Introduction
+   docs/projects
+
 
 
 
