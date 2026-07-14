@@ -1,5 +1,3 @@
-# 
-
 ## 1.Descripción
 
 ![image1](media/KT0193F.png)
@@ -94,14 +92,6 @@ Paso 2: Ingrese para encontrar la carpeta de bibliotecas; esta carpeta contiene 
 
 Paso 3: A continuación, busque la carpeta [“libraries”](./libraries.7z), solo necesita copiarla y pegarla en la carpeta de bibliotecas del IDE de Arduino.
 
-![image53](media/070a54e428caee6c2361a39d6be4b82f.png)
-
-![image54](media/da0e7c94005a4e3fdc9ca806116c5830.png)
-
-![image55](media/695eab52a0f8f1868e3f25629f7f055a.png)
-
 Luego copie las bibliotecas anteriores en las bibliotecas de Arduino, como se muestra a continuación:
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
-
-## 
