@@ -92,11 +92,7 @@ Step 2: Enter it to find the libraries folder; this folder contains the Arduino 
 
 Step 3: Next, find the [“libraries”](./libraries.7z), you just need to copy and paste it into the Arduino IDE’s libraries folder.
 
-![image53](media/070a54e428caee6c2361a39d6be4b82f.png)
 
-![image54](media/da0e7c94005a4e3fdc9ca806116c5830.png)
-
-![image55](media/695eab52a0f8f1868e3f25629f7f055a.png)
 
 Then copy the above libraries into the Arduino libraries, as shown below:
 
