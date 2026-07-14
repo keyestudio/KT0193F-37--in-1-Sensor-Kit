@@ -11,7 +11,6 @@ Thumbs.db
 *.mp4
 *.flv
 *.log
-*.APK
 .vscode
 .DS_Store
 
