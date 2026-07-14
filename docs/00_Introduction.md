@@ -1,16 +1,18 @@
-## 1.Description
+# 
+
+## 1.Beschreibung
 
 ![image1](media/KT0193F.png)
 
-This sensor kit contains 37 kinds of commonly used sensor modules for microcontroller projects, such as active buzzer module, 5V relay module, temperature and humidity module, and so on. It is compatible with various microcontrollers and Raspberry Pi.
+Dieses Sensor-Kit enthält 37 Arten von häufig verwendeten Sensormodulen für Mikrocontroller-Projekte, wie z.B. aktives Buzzer-Modul, 5V Relais-Modul, Temperatur- und Feuchtigkeitsmodul und so weiter. Es ist kompatibel mit verschiedenen Mikrocontrollern und Raspberry Pi.
 
-Additionally, we provide detailed projects for each sensor based on a development board, including wiring methods, test code, etc. This can help you further understand these sensor modules and apply them to interactive projects.
+Zusätzlich stellen wir detaillierte Projekte für jeden Sensor auf Basis eines Entwicklungsboards zur Verfügung, einschließlich Verdrahtungsmethoden, Testcode usw. Dies kann Ihnen helfen, diese Sensormodule besser zu verstehen und sie in interaktiven Projekten anzuwenden.
 
-Please note that in the following projects, the main board and other wires are not included in this kit. You will need to prepare them yourself.
+Bitte beachten Sie, dass in den folgenden Projekten das Hauptboard und andere Kabel nicht in diesem Kit enthalten sind. Sie müssen diese selbst vorbereiten.
 
-**Tutorial and code download address:** [KT0193F Tutorial](./code.7z)
+**Tutorial- und Code-Download-Adresse:** [KT0193F Tutorial](./code.7z)
 
-## 2.Component List
+## 2.Komponentenliste
 
 | \\ | NAME | PHOTO | quantity |
 |-----|------------------------------------|-------------------------------|----------|
@@ -66,31 +68,31 @@ Please note that in the following projects, the main board and other wires are n
 | 50 | M-F 20cm | ![image50](media/wps50.jpg) | 3 |
 | 51 | potentiometer | ![image51](media/wps51.jpg) | 1 |
 
-## 3. How to Add a Library?
+## 3. Wie fügt man eine Bibliothek hinzu?
 
-What are Libraries ?
+Was sind Bibliotheken?
 
-[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that makes it easy for you to connect to a sensor, display, module, etc.
+[Bibliotheken](https://www.arduino.cc/en/Reference/Libraries) sind eine Sammlung von Code, die es Ihnen leicht macht, sich mit einem Sensor, Display, Modul usw. zu verbinden.
 
-For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.
+Zum Beispiel hilft die integrierte LiquidCrystal-Bibliothek bei der Kommunikation mit LCD-Displays. Hunderte weiterer Bibliotheken stehen im Internet zum Download bereit.
 
-The built-in libraries and some of these additional libraries are listed in the reference.
+Die integrierten Bibliotheken und einige dieser zusätzlichen Bibliotheken sind in der Referenz aufgeführt.
 
-How to Install a Library ?
+Wie installiert man eine Bibliothek?
 
-Here we will introduce the simplest way for you to add libraries.
+Hier stellen wir Ihnen den einfachsten Weg vor, Bibliotheken hinzuzufügen.
 
-Step 1: After successfully downloading the Arduino IDE, you can right-click the Arduino IDE icon.
+Schritt 1: Nach dem erfolgreichen Herunterladen der Arduino IDE können Sie mit der rechten Maustaste auf das Symbol der Arduino IDE klicken.
 
-Find the option "Open file location" as shown below:
+Suchen Sie die Option "Dateispeicherort öffnen", wie unten gezeigt:
 
 ![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
 
-Step 2: Enter it to find the libraries folder; this folder contains the Arduino library files.
+Schritt 2: Öffnen Sie es, um den Bibliotheksordner zu finden; dieser Ordner enthält die Arduino-Bibliotheksdateien.
 
 ![image52](media/a67a5b5921be4dbc1b0ce92627111d15.png)
 
-Step 3: Next, find the [“libraries”](./libraries.7z), you just need to copy and paste it into the Arduino IDE’s libraries folder.
+Schritt 3: Suchen Sie als Nächstes den Ordner [„libraries“](./libraries.7z), Sie müssen ihn nur kopieren und in den Bibliotheksordner der Arduino IDE einfügen.
 
 ![image53](media/070a54e428caee6c2361a39d6be4b82f.png)
 
@@ -98,6 +100,6 @@ Step 3: Next, find the [“libraries”](./libraries.7z), you just need to copy 
 
 ![image55](media/695eab52a0f8f1868e3f25629f7f055a.png)
 
-Then copy the above libraries into the Arduino libraries, as shown below:
+Kopieren Sie dann die oben genannten Bibliotheken in die Arduino-Bibliotheken, wie unten gezeigt:
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
