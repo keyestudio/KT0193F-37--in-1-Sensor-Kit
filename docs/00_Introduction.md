@@ -1,16 +1,16 @@
-## 1.説明
+## 1.Beschrijving
 
 ![image1](media/KT0193F.png)
 
-このセンサーキットには、アクティブブザーモジュール、5Vリレーモジュール、温湿度モジュールなど、マイクロコントローラーのプロジェクトで一般的に使用される37種類のセンサーモジュールが含まれています。様々なマイクロコントローラーやRaspberry Piに対応しています。
+Deze sensorkit bevat 37 soorten veelgebruikte sensormodules voor microcontrollerprojecten, zoals een actieve buzzermodule, 5V relaismodule, temperatuur- en vochtigheidsmodule, enzovoort. Het is compatibel met verschillende microcontrollers en Raspberry Pi.
 
-さらに、開発ボードに基づいた各センサーの詳細なプロジェクトを提供しており、配線方法、テストコードなどが含まれています。これにより、これらのセンサーモジュールをさらに理解し、インタラクティブなプロジェクトに応用することができます。
+Daarnaast bieden we gedetailleerde projecten voor elke sensor op basis van een ontwikkelingsbord, inclusief bedradingsmethode, testcode, enz. Dit kan u helpen deze sensormodules beter te begrijpen en ze toe te passen in interactieve projecten.
 
-以下のプロジェクトでは、メインボードやその他のワイヤーはこのキットに含まれていませんのでご注意ください。ご自身でご用意いただく必要があります。
+Houd er rekening mee dat in de volgende projecten het hoofdbord en andere draden niet in deze kit zijn inbegrepen. U dient deze zelf voor te bereiden.
 
-**チュートリアルとコードのダウンロードアドレス：** [KT0193F Tutorial](./code.7z)
+**Adres voor downloaden van tutorial en code:** [KT0193F Tutorial](./code.7z)
 
-## 2.コンポーネントリスト
+## 2.Componentenlijst
 
 | \\ | NAME | PHOTO | quantity |
 |-----|------------------------------------|-------------------------------|----------|
@@ -66,33 +66,34 @@
 | 50 | M-F 20cm | ![image50](media/wps50.jpg) | 3 |
 | 51 | potentiometer | ![image51](media/wps51.jpg) | 1 |
 
-## 3. ライブラリの追加方法
+## 3. Hoe een bibliotheek toevoegen?
 
-ライブラリとは？
+Wat zijn bibliotheken?
 
-[ライブラリ](https://www.arduino.cc/en/Reference/Libraries)は、センサー、ディスプレイ、モジュールなどへの接続を容易にするコードの集まりです。
+[Bibliotheken](https://www.arduino.cc/en/Reference/Libraries) zijn een verzameling code die het u gemakkelijk maakt om verbinding te maken met een sensor, display, module, enz.
 
-例えば、内蔵のLiquidCrystalライブラリはLCDディスプレイとの通信を助けます。インターネット上には、ダウンロード可能な数百もの追加ライブラリがあります。
+De ingebouwde LiquidCrystal-bibliotheek helpt bijvoorbeeld om met LCD-schermen te communiceren. Er zijn honderden extra bibliotheken beschikbaar op internet om te downloaden.
 
-内蔵ライブラリとこれらの追加ライブラリの一部は、リファレンスに記載されています。
+De ingebouwde bibliotheken en enkele van deze extra bibliotheken staan vermeld in de referentie.
 
-ライブラリのインストール方法
+Hoe installeer je een bibliotheek?
 
-ここでは、ライブラリを追加する最も簡単な方法をご紹介します。
+Hier introduceren we de eenvoudigste manier om bibliotheken toe te voegen.
 
-ステップ1：Arduino IDEを正常にダウンロードした後、Arduino IDEのアイコンを右クリックします。
+Stap 1: Nadat u de Arduino IDE succesvol hebt gedownload, kunt u met de rechtermuisknop op het pictogram van de Arduino IDE klikken.
 
-以下に示す「ファイルの場所を開く」オプションを見つけます。
+Zoek de optie "Bestandslocatie openen" zoals hieronder weergegeven:
 
 ![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
 
-ステップ2：そこに入り、ライブラリフォルダを見つけます。このフォルダにはArduinoのライブラリファイルが含まれています。
+Stap 2: Ga hierin om de bibliothekenmap te vinden; deze map bevat de Arduino-bibliotheekbestanden.
 
 ![image52](media/a67a5b5921be4dbc1b0ce92627111d15.png)
 
-ステップ3：次に、このキットの[「libraries」](./libraries.7z)を見つけ、それをArduino IDEのライブラリフォルダにコピー＆ペーストするだけです。
+Stap 3: Zoek vervolgens de map [“libraries”](./libraries.7z), u hoeft deze alleen maar te kopiëren en te plakken in de bibliothekenmap van de Arduino IDE.
 
-次に、上記のライブラリをArduinoのライブラリにコピーします。以下に示すとおりです。
+
+
+Kopieer vervolgens de bovenstaande bibliotheken naar de Arduino-bibliotheken, zoals hieronder weergegeven:
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
-
