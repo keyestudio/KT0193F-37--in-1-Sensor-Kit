@@ -1,16 +1,16 @@
-## 1.Description
+## 1.Descrizione
 
 ![image1](media/KT0193F.png)
 
-Ce kit de capteurs contient 37 types de modules de capteurs couramment utilisés dans les projets de microcontrôleurs, tels que le module de buzzer actif, le module de relais 5V, le module de température et d'humidité, etc. Il est compatible avec divers microcontrôleurs et Raspberry Pi.
+Questo kit di sensori contiene 37 tipi di moduli sensore comunemente usati nei progetti con microcontrollori, come il modulo buzzer attivo, il modulo relè 5V, il modulo di temperatura e umidità e così via. È compatibile con vari microcontrollori e Raspberry Pi.
 
-De plus, nous fournissons des projets détaillés pour chaque capteur basés sur une carte de développement, y compris la méthode de câblage, le code de test, etc. Cela peut vous aider à mieux comprendre ces modules de capteurs et à les appliquer à des projets interactifs.
+Inoltre, forniamo progetti dettagliati per ogni sensore basati su una scheda di sviluppo, inclusi il metodo di cablaggio, il codice di test, ecc. Questo può aiutarti a comprendere meglio questi moduli sensore e ad applicarli a progetti interattivi.
 
-Veuillez noter que dans les projets suivants, la carte principale et les autres câbles ne sont pas inclus dans ce kit. Vous devrez les préparer vous-même.
+Si prega di notare che nei seguenti progetti, la scheda principale e altri cavi non sono inclusi in questo kit. Dovrai prepararli da solo.
 
-**Adresse de téléchargement du tutoriel et du code :** [KT0193F Tutorial](./code.7z)
+**Indirizzo per il download del tutorial e del codice:** [KT0193F Tutorial](./code.7z)
 
-## 2.Liste des composants
+## 2.Elenco componenti
 
 | \\ | NAME | PHOTO | quantity |
 |-----|------------------------------------|-------------------------------|----------|
@@ -66,32 +66,32 @@ Veuillez noter que dans les projets suivants, la carte principale et les autres 
 | 50 | M-F 20cm | ![image50](media/wps50.jpg) | 3 |
 | 51 | potentiometer | ![image51](media/wps51.jpg) | 1 |
 
-## 3. Comment ajouter une bibliothèque ?
+## 3. Come aggiungere una libreria?
 
-Que sont les bibliothèques ?
+Cosa sono le librerie?
 
-Les [bibliothèques](https://www.arduino.cc/en/Reference/Libraries) sont une collection de code qui vous permet de vous connecter facilement à un capteur, un écran, un module, etc.
+Le [librerie](https://www.arduino.cc/en/Reference/Libraries) sono una raccolta di codice che ti facilita la connessione a un sensore, display, modulo, ecc.
 
-Par exemple, la bibliothèque intégrée LiquidCrystal aide à communiquer avec les écrans LCD. Des centaines de bibliothèques supplémentaires sont disponibles sur Internet en téléchargement.
+Ad esempio, la libreria LiquidCrystal integrata aiuta a comunicare con i display LCD. Centinaia di librerie aggiuntive sono disponibili su Internet per il download.
 
-Les bibliothèques intégrées et certaines de ces bibliothèques supplémentaires sont répertoriées dans la référence.
+Le librerie integrate e alcune di queste librerie aggiuntive sono elencate nel riferimento.
 
-Comment installer une bibliothèque ?
+Come installare una libreria?
 
-Nous allons ici vous présenter la manière la plus simple d'ajouter des bibliothèques.
+Qui ti presenteremo il modo più semplice per aggiungere librerie.
 
-Étape 1 : Après avoir téléchargé l'IDE Arduino, vous pouvez faire un clic droit sur l'icône de l'IDE Arduino.
+Passaggio 1: Dopo aver scaricato correttamente l'IDE Arduino, puoi fare clic con il tasto destro sull'icona dell'IDE Arduino.
 
-Trouvez l'option "Ouvrir l'emplacement du fichier" comme indiqué ci-dessous :
+Trova l'opzione "Apri percorso file" come mostrato di seguito:
 
 ![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
 
-Étape 2 : Entrez-y pour trouver le dossier des bibliothèques ; ce dossier contient les fichiers de bibliothèque Arduino.
+Passaggio 2: Entra per trovare la cartella delle librerie; questa cartella contiene i file di libreria di Arduino.
 
 ![image52](media/a67a5b5921be4dbc1b0ce92627111d15.png)
 
-Étape 3 : Ensuite, trouvez le dossier [« libraries »](./libraries.7z), il vous suffit de le copier et de le coller dans le dossier des bibliothèques de l'IDE Arduino.
+Passaggio 3: Successivamente, trova la cartella [“libraries”](./libraries.7z), devi solo copiarla e incollarla nella cartella delle librerie dell'IDE Arduino.
 
-Copiez ensuite les bibliothèques ci-dessus dans les bibliothèques d'Arduino, comme indiqué ci-dessous :
+Quindi copia le librerie sopra indicate nelle librerie di Arduino, come mostrato di seguito:
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
