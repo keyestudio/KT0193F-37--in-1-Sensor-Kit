@@ -1,16 +1,16 @@
-## 1.Descrizione
+## 1.説明
 
 ![image1](media/KT0193F.png)
 
-Questo kit di sensori contiene 37 tipi di moduli sensore comunemente usati nei progetti con microcontrollori, come il modulo buzzer attivo, il modulo relè 5V, il modulo di temperatura e umidità e così via. È compatibile con vari microcontrollori e Raspberry Pi.
+このセンサーキットには、アクティブブザーモジュール、5Vリレーモジュール、温湿度モジュールなど、マイクロコントローラーのプロジェクトで一般的に使用される37種類のセンサーモジュールが含まれています。様々なマイクロコントローラーやRaspberry Piに対応しています。
 
-Inoltre, forniamo progetti dettagliati per ogni sensore basati su una scheda di sviluppo, inclusi il metodo di cablaggio, il codice di test, ecc. Questo può aiutarti a comprendere meglio questi moduli sensore e ad applicarli a progetti interattivi.
+さらに、開発ボードに基づいた各センサーの詳細なプロジェクトを提供しており、配線方法、テストコードなどが含まれています。これにより、これらのセンサーモジュールをさらに理解し、インタラクティブなプロジェクトに応用することができます。
 
-Si prega di notare che nei seguenti progetti, la scheda principale e altri cavi non sono inclusi in questo kit. Dovrai prepararli da solo.
+以下のプロジェクトでは、メインボードやその他のワイヤーはこのキットに含まれていませんのでご注意ください。ご自身でご用意いただく必要があります。
 
-**Indirizzo per il download del tutorial e del codice:** [KT0193F Tutorial](./code.7z)
+**チュートリアルとコードのダウンロードアドレス：** [KT0193F Tutorial](./code.7z)
 
-## 2.Elenco componenti
+## 2.コンポーネントリスト
 
 | \\ | NAME | PHOTO | quantity |
 |-----|------------------------------------|-------------------------------|----------|
@@ -66,32 +66,33 @@ Si prega di notare che nei seguenti progetti, la scheda principale e altri cavi 
 | 50 | M-F 20cm | ![image50](media/wps50.jpg) | 3 |
 | 51 | potentiometer | ![image51](media/wps51.jpg) | 1 |
 
-## 3. Come aggiungere una libreria?
+## 3. ライブラリの追加方法
 
-Cosa sono le librerie?
+ライブラリとは？
 
-Le [librerie](https://www.arduino.cc/en/Reference/Libraries) sono una raccolta di codice che ti facilita la connessione a un sensore, display, modulo, ecc.
+[ライブラリ](https://www.arduino.cc/en/Reference/Libraries)は、センサー、ディスプレイ、モジュールなどへの接続を容易にするコードの集まりです。
 
-Ad esempio, la libreria LiquidCrystal integrata aiuta a comunicare con i display LCD. Centinaia di librerie aggiuntive sono disponibili su Internet per il download.
+例えば、内蔵のLiquidCrystalライブラリはLCDディスプレイとの通信を助けます。インターネット上には、ダウンロード可能な数百もの追加ライブラリがあります。
 
-Le librerie integrate e alcune di queste librerie aggiuntive sono elencate nel riferimento.
+内蔵ライブラリとこれらの追加ライブラリの一部は、リファレンスに記載されています。
 
-Come installare una libreria?
+ライブラリのインストール方法
 
-Qui ti presenteremo il modo più semplice per aggiungere librerie.
+ここでは、ライブラリを追加する最も簡単な方法をご紹介します。
 
-Passaggio 1: Dopo aver scaricato correttamente l'IDE Arduino, puoi fare clic con il tasto destro sull'icona dell'IDE Arduino.
+ステップ1：Arduino IDEを正常にダウンロードした後、Arduino IDEのアイコンを右クリックします。
 
-Trova l'opzione "Apri percorso file" come mostrato di seguito:
+以下に示す「ファイルの場所を開く」オプションを見つけます。
 
 ![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
 
-Passaggio 2: Entra per trovare la cartella delle librerie; questa cartella contiene i file di libreria di Arduino.
+ステップ2：そこに入り、ライブラリフォルダを見つけます。このフォルダにはArduinoのライブラリファイルが含まれています。
 
 ![image52](media/a67a5b5921be4dbc1b0ce92627111d15.png)
 
-Passaggio 3: Successivamente, trova la cartella [“libraries”](./libraries.7z), devi solo copiarla e incollarla nella cartella delle librerie dell'IDE Arduino.
+ステップ3：次に、このキットの[「libraries」](./libraries.7z)を見つけ、それをArduino IDEのライブラリフォルダにコピー＆ペーストするだけです。
 
-Quindi copia le librerie sopra indicate nelle librerie di Arduino, come mostrato di seguito:
+次に、上記のライブラリをArduinoのライブラリにコピーします。以下に示すとおりです。
 
 ![image56](media/b5704ba7ce9103ecd236964e13f67865.png)
+
